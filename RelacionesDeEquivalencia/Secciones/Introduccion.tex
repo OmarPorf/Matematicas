@@ -1,0 +1,93 @@
+\section{Introducción}
+\begin{frame}
+    \only{
+        Supóngase que se está en un evento donde se forman personas en filas dependiendo su edad. Se tiene una fila de personas todas de 18 años, otra de 20, otra de 37, etc.
+    }<1>
+    \only{
+        Resulta que cada una de estas filas cumple ciertas propiedades.\par 
+        ¿Hay filas vacías?\par 
+        ¿Todas las personas están en alguna fila?\par 
+        ¿Existen personas en más de una fila?\par 
+        Si dos personas están en la misma fila, ¿tienen la misma edad?\par 
+        ¿Todas las filas tienen a alguien que está hasta adelante? 
+    }<2>
+\end{frame}
+\begin{frame}
+    Denotemos a cada fila como $L_{i}$ ($1\leq i\leq n$ para algún $n$). Sean dos personas $a, b$, si $a$ tiene la misma edad que $b$, entonces $b$ tiene la misma edad que $a$, entonces $a, b\in L_{i}$ ($a$ y $b$ están en la misma fila). También tenemos que una persona tiene su misma edad, entonces necesariamente están en alguna fila (aunque puede que esté solito). Y finalmente, tenemos que si $a$ tiene la misma edad que $b$ y $b$ tiene la misma edad que $c$, entonces $a$ tiene la misma edad que $c$ y entonces los tres están en una misma fila.
+\end{frame}
+\begin{frame}{Propiedades de la igualdad}
+    Retomemos a la relación de igualdad ($=$). Sabemos que siempre se cumplen las siguientes tres propiedades:
+    \begin{enumerate}
+        \item $a = a$
+        \item Si $a = b$, entonces $b = a$.
+        \item Si $a = b$ y $b = c$, entonces $a = c$
+    \end{enumerate}
+    Estas propiedades se denominan \emph{reflexividad}, \emph{simetría} y \emph{transitividad} respectivamente.
+\end{frame}
+\begin{frame}
+    Esas tres propiedades caracterizan a la igualdad, pero la igualdad no es la única relación que cumple esas tres propiedades.\par 
+    El formar a personas de acuerdo a su edad también cumple esas tres propiedades:
+    \begin{enumerate}
+        \item (Reflexividad) Una persona tiene su misma edad.
+        \item (Simetría) Si una persona $a$ tiene la misma edad que otra persona $b$, la persona $b$ tiene la misma edad que $a$.
+        \item (Transitividad) Si una persona $a$ tiene la misma edad que otra persona $b$ y $b$ tiene la misma edad de otra persona $c$, $a$ tiene la misma edad de $c$.
+    \end{enumerate}
+\end{frame}
+\begin{frame}{Relaciones}
+    Recordemos la definición de relación binaria.
+    \begin{mdefinition}[Relación binaria]
+        Sean $A, B$ conjuntos. Una \emph{relación binaria} de $A$ y $B$ es un conjunto $R\subseteq A\times B$.\par 
+        Si $(a, b)\in R$, decimos que $a$ \emph{está relacionado con} $b$ y lo denotamos como $aRb$.
+    \end{mdefinition}
+\end{frame}
+\begin{frame}
+    Dado que $=$ es una relación, se pueden tener relaciones que cumplan las tres propiedades de la igualdad.
+    \only{
+        \begin{mdefinition}[Relación reflexiva]
+            Sea $A$ un conjunto y $R\subseteq A^{2}$ una relación binaria. $R$ se dice \emph{reflexiva} si para cada $a\in A$, $aRa$.
+        \end{mdefinition}
+    }<1>
+    \only{
+        \begin{mdefinition}[Relación simétrica]
+            Sea $A$ un conjunto y $R\subseteq A^{2}$ una relación binaria. $R$ se dice \emph{simétrica} si para cada $a, b\in A$, $aRb\implies bRa$.
+        \end{mdefinition}
+    }<2>
+    \only{
+        \begin{mdefinition}[Relación transitiva]
+            Sea $A$ un conjunto y $R\subseteq A^{2}$ una relación binaria. $R$ se dice \emph{transitiva} si para cada $a, b, c\in A$, $\pa{aRb\land bRc}\implies aRc$
+        \end{mdefinition}
+    }<3>
+\end{frame}
+\begin{frame}{Ejercicios}
+    \begin{exercise}
+        \only{
+            Suponga que se tiene un grupo de personas y las juntaremos. Dos personas están juntas si y solo si tienen edades diferentes.
+        }<1>
+        \only{
+            Dos números están relacionados si y solo si su resta es menor que 0.
+        }<2>
+        \only{
+            Dos personas en un concierto se sientan en la misma fila si y solo si pagaron lo mismo por su boleto.
+        }<3>
+        \only{
+            Dos números están relacionados si y solo si su resta es menor o igual que 0.
+        }<4>
+        \only{
+            Dos rectas en el plano cartesiano están relacionadas si su pendiente es la misma.
+        }<5>
+        \only{
+            Dos números están relacionados si y solo si su resta es par.
+        }<6>
+        \only{
+            Dos personas están en el mismo grupo si y solo si residen en el mismo estado.
+        }<7>
+        \par¿Esta relación es reflexiva, simétrica o transitiva?
+    \end{exercise}
+\end{frame}
+\begin{frame}{Generalización de la igualdad}
+    Dado que existen relaciones con las mismas propiedades de la igualdad, podemos generalizar el concepto de igualdad a algo denominado \emph{equivalencia}. A las relaciones que indican \emph{equivalencia} se les denomina \emph{de equivalencia}.
+    \begin{mdefinition}[Relaciones de equivalencia]
+        Sea $A$ un conjunto y $R\subseteq A^{2}$ una relación. $R$ se denomina \emph{de equivalencia} si es reflexiva, simétrica y transitiva.
+    \end{mdefinition}
+    Para mayor eficiencia, denotaremos a una relación de equivalencia por $\sim$.
+\end{frame}

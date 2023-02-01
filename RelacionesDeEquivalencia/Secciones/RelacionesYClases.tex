@@ -1,0 +1,95 @@
+\section{Algunas relaciones de equivalencia}
+\begin{frame}{Fracciones equivalentes}
+	\begin{exercise}
+		Sean $ (a, b), (c, d)\in\zmath[2]\setminus\set{(a, b)\in\zmath[2]: b = 0} $. Diremos que $ (a, b)\sim(c, d) $ si y solo si:
+		\[ ad = cb \]
+		Demuestre que esta relación es de equivalencia.
+	\end{exercise}
+\end{frame}
+\begin{frame}{Demostración}
+	\begin{proof}
+		\begin{itemize}
+			\only{
+				\item Reflexividad\\
+				Sea $ (a, b)\in\zmath[2]\setminus\set{(a, b)\in\zmath[2]: b = 0} $. Claramente se tiene que:
+				\[ ab = ba \]
+				Por lo tanto, $ (a, b)\sim(a, b) $.
+			}<1>
+			\only{
+				\item Simetría\\
+				Sean $ (a, b), (c, d)\in\zmath[2]\setminus\set{(a, b)\in\zmath[2]: b = 0} $ tales que $ (a, b)\sim(c, d) $. Entonces tenemos que:
+				\begin{align*}
+					ad &= cb\\
+					cb &= ad
+				\end{align*}
+				Por lo tanto, $ (c, d)\sim(a, b) $.
+			}<2>
+		\only{
+			\item Transitividad\\
+			Sean $ (a, b), (c, d), (e, f)\in\zmath[2]\setminus\set{(a, b)\in\zmath[2]: b = 0} $ tales que $ (a, b)\sim(c, d) $ y $ (c, d)\sim(e, f) $. Entonces se tiene que:
+			\begin{align*}
+				ad = cb &\implies c =\frac{ad}{b}\\
+				cf = ed &\implies c =\frac{ed}{f}\\
+				\frac{ad}{b} =\frac{ed}{f} &\implies adf = bed\\
+				af &= eb
+			\end{align*}
+			Por lo tanto, $ (a, b)\sim(e, f) $.
+		}<3>
+		\end{itemize}
+	\end{proof}
+\end{frame}
+\begin{frame}{Fracciones equivalentes}
+	Esta relación entre puntos de números enteros es como podemos definir a las fracciones equivalentes. Dos fracciones $ \frac{a}{b}, \frac{c}{d} $ las podemos ver como pares $ (a, b), (c, d) $ donde estas son equivalentes si y solo si:
+	\[ ad = bc \]
+	\begin{mdefinition}[Fracciones equivalentes]
+		Sean $ \frac{a}{b}, \frac{c}{d}\in\qmath $. Decimos que $ \frac{a}{b} $ y $ \frac{c}{d} $ son \emph{equivalentes} si y solo si $ (a, b)\sim(c, d) $ con la relación de equivalencia descrita anteriormente.
+	\end{mdefinition}
+\end{frame}
+\begin{frame}{Módulos}
+	\begin{exercise}
+		Sean $ a, b, n\in\zmath $. Decimos que $ a\sim b $ si y solo si
+		\[ n\mid(a - b) \]
+		Demuestre que $ \sim $ es de equivalencia.
+	\end{exercise}
+\end{frame}
+\begin{frame}{Demostración}
+	\begin{proof}
+		\begin{itemize}
+			\only{
+				\item Reflexividad\\
+				Sea $ a\in\zmath $. Es claro que:
+				\[ n\mid(a - a) \]
+				Por lo tanto, $ a\sim a $.
+			}<1>
+			\only{
+				\item Simetría\\
+				 Sean $ a, b\in\zmath $ tales que $ a\sim b $. Entonces se tiene que:
+				 \begin{align*}
+					n\mid(a - b)\\
+					n\mid(b - a)
+				 \end{align*} 
+				 Por lo tanto, $ b\sim a $.
+			}<2>
+			\only{
+				\item Transitividad\\
+				Sean $ a, b, c\in\zmath $ tales que $ a\sim b $ y $ b\sim c $. Entonces se tiene que existen $ k, m $ tales que:
+				\begin{align*}
+					nk &= a - b\\
+					nm &= b - c
+				\end{align*}
+				De esto vemos que:
+				\begin{align*}
+					nk + nm &= (a - b) + (b - c)\\
+					n(k + m) &= a - c
+				\end{align*}
+				Por lo tanto, $ a\sim c $.			
+			}<3>
+		\end{itemize}
+	\end{proof}
+\end{frame}
+\begin{frame}
+	Dos números relacionados de esta forma se dicen \emph{iguales módulo} $ n $.
+	\begin{mdefinition}[Módulo]
+		Sean $ a, b, n\in\zmath $. Decimos que $ a = b $ módulo $ n $, denotado por $ a = b\mod n $, si y solo si $ a\sim b $ con la relación de equivalencia descrita anteriormente.
+	\end{mdefinition}
+\end{frame}

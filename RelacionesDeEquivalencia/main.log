@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.12) (preloaded format=pdflatex 2023.1.27)  31 JAN 2023 21:04
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.12) (preloaded format=pdflatex 2023.1.27)  2 FEB 2023 23:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1545,12 +1545,12 @@ LaTeX Info: Redefining \. on input line 2.
 LaTeX Info: Redefining \% on input line 2.
 \c@lstlisting=\count408
  (main.nav)
-<images/ESCUDO_ESFM.png, id=33, 129.1224pt x 166.9437pt>
+<images/ESCUDO_ESFM.png, id=37, 129.1224pt x 166.9437pt>
 File: images/ESCUDO_ESFM.png Graphic file (type png)
 <use images/ESCUDO_ESFM.png>
 Package pdftex.def Info: images/ESCUDO_ESFM.png  used on input line 3.
 (pdftex.def)             Requested size: 22.00568pt x 28.45274pt.
-<images/ipn2.png, id=35, 1606.0pt x 1140.26pt>
+<images/ipn2.png, id=39, 1606.0pt x 1140.26pt>
 File: images/ipn2.png Graphic file (type png)
 <use images/ipn2.png>
 Package pdftex.def Info: images/ipn2.png  used on input line 3.
@@ -1642,6 +1642,93 @@ File: uesint.fd
 
 ] [31
 
+] [32
+
+] [33
+
+] [34
+
+] [35
+
+] [36
+
+] [37
+
+] [38
+
+]) (Secciones/Clases.tex
+[39
+
+] [40
+
+] [41
+
+] [42
+
+] [43
+
+] [44
+
+] [45
+
+] [46
+
+] [47
+
+] [48
+
+] [49
+
+] [50
+
+] [51
+
+] [52
+
+] [53
+
+]
+[54
+
+] [55
+
+]
+LaTeX Font Info:    Trying to load font information for U+euf on input line 112
+.
+
+(C:\Users\JASIEL\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\ueuf.fd
+File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
+)
+[56
+
+] [57
+
+] [58
+
+] [59
+
+] [60
+
+] [61
+
+] [62
+
+] [63
+
+] [64
+
+] [65
+
+] [66
+
+] [67
+
+] [68
+
+] [69
+
+] [70
+
 ])
 \tf@nav=\write6
 \openout6 = `main.nav'.
@@ -1652,21 +1739,22 @@ File: uesint.fd
 \tf@snm=\write8
 \openout8 = `main.snm'.
 
- (main.aux
+
+(main.aux
 LaTeX Info: Redefining \. on input line 23.
 LaTeX Info: Redefining \% on input line 23.
 )
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 5984B6DCCDAF8377DC8D4F6629A03906;328.
+(rerunfilecheck)             Checksum: 0C266B66E37D62784F5D2822E6D07592;487.
  ) 
 Here is how much of TeX's memory you used:
- 38555 strings out of 476404
- 841092 string characters out of 2789052
- 1872324 words of memory out of 3000000
- 58086 multiletter control sequences out of 15000+600000
- 520306 words of font info for 63 fonts, out of 8000000 for 9000
+ 38879 strings out of 476404
+ 849021 string characters out of 2789052
+ 1874324 words of memory out of 3000000
+ 58321 multiletter control sequences out of 15000+600000
+ 522914 words of font info for 77 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 138i,16n,128p,607b,902s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ 138i,16n,128p,607b,1097s stack positions out of 10000i,1000n,20000p,200000b,80000s
 <C:/Users/JASIEL/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm
 /cmex10.pfb><C:/Users/JASIEL/AppData/Local/Programs/MiKTeX/fonts/type1/public/a
 msfonts/cm/cmmi10.pfb><C:/Users/JASIEL/AppData/Local/Programs/MiKTeX/fonts/type
@@ -1679,10 +1767,12 @@ ASIEL/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss8.pfb><C
 :/Users/JASIEL/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cms
 si10.pfb><C:/Users/JASIEL/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsf
 onts/cm/cmsy10.pfb><C:/Users/JASIEL/AppData/Local/Programs/MiKTeX/fonts/type1/p
-ublic/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (31 pages, 712599 bytes).
+ublic/amsfonts/cm/cmsy8.pfb><C:/Users/JASIEL/AppData/Local/Programs/MiKTeX/font
+s/type1/public/amsfonts/euler/eufm10.pfb><C:/Users/JASIEL/AppData/Local/Program
+s/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on main.pdf (70 pages, 1046554 bytes).
 PDF statistics:
- 1230 PDF objects out of 1440 (max. 8388607)
- 65 named destinations out of 1000 (max. 500000)
- 951 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2589 PDF objects out of 2984 (max. 8388607)
+ 144 named destinations out of 1000 (max. 500000)
+ 1775 words of extra memory for PDF output out of 10000 (max. 10000000)
 

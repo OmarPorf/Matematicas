@@ -1,7 +1,7 @@
 \section{Algunas relaciones de equivalencia}
 \begin{frame}{Fracciones equivalentes}
 	\begin{exercise}
-		Sean $ (a, b), (c, d)\in\zmath[2]\setminus\set{(a, b)\in\zmath[2]: b = 0} $. Diremos que $ (a, b)\sim(c, d) $ si y solo si:
+		Sean $ (a, b), (c, d)\in\nmath[2] $. Diremos que $ (a, b)\sim(c, d) $ si y solo si:
 		\[ ad = cb \]
 		Demuestre que esta relación es de equivalencia.
 	\end{exercise}
@@ -11,13 +11,13 @@
 		\begin{itemize}
 			\only{
 				\item Reflexividad\\
-				Sea $ (a, b)\in\zmath[2]\setminus\set{(a, b)\in\zmath[2]: b = 0} $. Claramente se tiene que:
+				Sea $ (a, b)\in\nmath[2] $. Claramente se tiene que:
 				\[ ab = ba \]
 				Por lo tanto, $ (a, b)\sim(a, b) $.
 			}<1>
 			\only{
 				\item Simetría\\
-				Sean $ (a, b), (c, d)\in\zmath[2]\setminus\set{(a, b)\in\zmath[2]: b = 0} $ tales que $ (a, b)\sim(c, d) $. Entonces tenemos que:
+				Sean $ (a, b), (c, d)\in\nmath[2] $ tales que $ (a, b)\sim(c, d) $. Entonces tenemos que:
 				\begin{align*}
 					ad &= cb\\
 					cb &= ad
@@ -26,7 +26,7 @@
 			}<2>
 		\only{
 			\item Transitividad\\
-			Sean $ (a, b), (c, d), (e, f)\in\zmath[2]\setminus\set{(a, b)\in\zmath[2]: b = 0} $ tales que $ (a, b)\sim(c, d) $ y $ (c, d)\sim(e, f) $. Entonces se tiene que:
+			Sean $ (a, b), (c, d), (e, f)\in\nmath[2] $ tales que $ (a, b)\sim(c, d) $ y $ (c, d)\sim(e, f) $. Entonces se tiene que:
 			\begin{align*}
 				ad = cb &\implies c =\frac{ad}{b}\\
 				cf = ed &\implies c =\frac{ed}{f}\\
@@ -44,6 +44,9 @@
 	\begin{mdefinition}[Fracciones equivalentes]
 		Sean $ \frac{a}{b}, \frac{c}{d}\in\qmath $. Decimos que $ \frac{a}{b} $ y $ \frac{c}{d} $ son \emph{equivalentes} si y solo si $ (a, b)\sim(c, d) $ con la relación de equivalencia descrita anteriormente.
 	\end{mdefinition}
+\end{frame}
+\begin{frame}
+	
 \end{frame}
 \begin{frame}{Módulos}
 	\begin{exercise}
@@ -87,9 +90,39 @@
 		\end{itemize}
 	\end{proof}
 \end{frame}
-\begin{frame}
+\begin{frame}{Módulos}
 	Dos números relacionados de esta forma se dicen \emph{iguales módulo} $ n $.
 	\begin{mdefinition}[Módulo]
 		Sean $ a, b, n\in\zmath $. Decimos que $ a = b $ módulo $ n $, denotado por $ a = b\mod n $, si y solo si $ a\sim b $ con la relación de equivalencia descrita anteriormente.
 	\end{mdefinition}
+\end{frame}
+\begin{frame}
+	
+\end{frame}
+\begin{frame}{Relación mediante una función}
+	\begin{exercise}
+		Sean $ f:\rmath\to\rmath $ y $ a, b\in\mdom{f} $. $ a\sim b $ si y solo si $ f(a) = f(b) $.\par 
+		Demuestre que esta relación es de equivalencia.
+	\end{exercise}
+\end{frame}
+\begin{frame}{Demostración}
+	\begin{proof}
+		\begin{itemize}
+			\only{
+				\item Reflexividad\\
+				Sea $ a\in\mdom{f} $. Claramente $ f(a) = f(a) $ y entonces $ a\sim a $.
+			}<1>
+			\only{
+				\item Simetría\\
+				Sean $ a, b\in\mdom{f} $ tales que $ a\sim b $, entonces $ f(a) = f(b) $. Dado que $ f(b) = f(a) $, entonces $ b\sim a $.
+			}<2>
+			\only{
+				\item Transitividad\\
+				Sean $ a, b, c\in\mdom{f} $ tales que $ a\sim b $ y $ b\sim c $, entonces $ f(a) = f(b) $ y $ f(b) = f(c) $. Por lo tanto, $ f(a) = f(c) $ y entonces $ a\sim c $.
+			}<3>
+		\end{itemize}
+	\end{proof}
+\end{frame}
+\begin{frame}
+	
 \end{frame}

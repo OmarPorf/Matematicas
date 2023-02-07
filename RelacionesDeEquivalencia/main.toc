@@ -1,4 +1,5 @@
 \babel@toc {spanish}{}\relax 
 \beamer@sectionintoc {1}{Introducción}{3}{0}{1}
-\beamer@sectionintoc {2}{Algunas relaciones de equivalencia}{21}{0}{2}
-\beamer@sectionintoc {3}{Clases de equivalencia}{39}{0}{3}
+\beamer@sectionintoc {2}{Algunas relaciones de equivalencia}{22}{0}{2}
+\beamer@sectionintoc {3}{Clases de equivalencia}{40}{0}{3}
+\beamer@sectionintoc {4}{Conjunto cociente y teorema fundamental de las relaciones de equivalencia}{72}{0}{4}

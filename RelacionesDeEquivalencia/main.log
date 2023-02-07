@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.12) (preloaded format=pdflatex 2023.1.27)  2 FEB 2023 23:59
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.12) (preloaded format=pdflatex 2023.1.27)  6 FEB 2023 20:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1298,6 +1298,31 @@ File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 \@venn@intersect@ii@x=\skip150
 \@venn@intersect@ii@y=\skip151
 )
+(C:\Users\JASIEL\AppData\Local\Programs\MiKTeX\tex/latex/tkz-graph\tkz-graph.st
+y
+2021/01/20 v 2.00 tkz-graph.sty
+Package: tkz-graph 2021/01/20 2.00 base for graphs
+
+(C:\Users\JASIEL\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/ti
+kz/libraries\tikzlibraryarrows.code.tex
+File: tikzlibraryarrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
+
+(C:\Users\JASIEL\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflib
+raryarrows.code.tex
+File: pgflibraryarrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\arrowsize=\dimen338
+))
+\c@tkz@gr@a=\count390
+\c@tkz@gr@b=\count391
+\c@tkz@gr@c=\count392
+\c@tkz@gr@e=\count393
+\c@tkz@gr@d=\count394
+\c@tkz@gr@p=\count395
+\c@tkz@gr@i=\count396
+\c@tkz@gr@n=\count397
+\c@tkz@gr@ta=\count398
+\c@tkz@gr@tb=\count399
+)
 (C:\Users\JASIEL\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcolorbox.st
 y
 Package: tcolorbox 2022/06/24 version 5.1.1 text color boxes
@@ -1318,9 +1343,9 @@ Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
 \tcb@upperbox=\box142
 \tcb@lowerbox=\box143
 \tcb@phantombox=\box144
-\c@tcbbreakpart=\count390
-\c@tcblayer=\count391
-\c@tcolorbox@number=\count392
+\c@tcbbreakpart=\count400
+\c@tcblayer=\count401
+\c@tcolorbox@number=\count402
 \tcb@temp=\box145
 \tcb@temp=\box146
 \tcb@temp=\box147
@@ -1329,10 +1354,10 @@ Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
 (C:\Users\JASIEL\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcbraster.co
 de.tex
 Library (tcolorbox): 'tcbraster.code.tex' version '5.1.1'
-\c@tcbrastercolumn=\count393
-\c@tcbrasterrow=\count394
-\c@tcbrasternum=\count395
-\c@tcbraster=\count396
+\c@tcbrastercolumn=\count403
+\c@tcbrasterrow=\count404
+\c@tcbrasternum=\count405
+\c@tcbraster=\count406
 )
 (C:\Users\JASIEL\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcbskins.cod
 e.tex
@@ -1365,13 +1390,13 @@ Library (tcolorbox): 'tcbtheorems.code.tex' version '5.1.1'
 (C:\Users\JASIEL\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcbfitting.c
 ode.tex
 Library (tcolorbox): 'tcbfitting.code.tex' version '5.1.1'
-\tcbfitdim=\dimen338
-\tcb@lowerfitdim=\dimen339
-\tcb@upperfitdim=\dimen340
-\tcb@cur@hbadness=\count397
+\tcbfitdim=\dimen339
+\tcb@lowerfitdim=\dimen340
+\tcb@upperfitdim=\dimen341
+\tcb@cur@hbadness=\count407
 )) (C:\Users\JASIEL\AppData\Local\Programs\MiKTeX\tex/latex/xargs\xargs.sty
 Package: xargs 2008/03/22 v1.1  extended macro definitions  (mpg)
-\xargs@max=\count398
+\xargs@max=\count408
 \xargs@toksa=\toks61
 \xargs@toksb=\toks62
 )
@@ -1410,10 +1435,10 @@ File: pgflibraryshapes.multipart.code.tex 2023-01-15 v3.1.10 (3.1.10)
 (C:\Users\JASIEL\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflib
 raryarrows.meta.code.tex
 File: pgflibraryarrows.meta.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfarrowinset=\dimen341
-\pgfarrowlength=\dimen342
-\pgfarrowwidth=\dimen343
-\pgfarrowlinewidth=\dimen344
+\pgfarrowinset=\dimen342
+\pgfarrowlength=\dimen343
+\pgfarrowwidth=\dimen344
+\pgfarrowlinewidth=\dimen345
 )
 (C:\Users\JASIEL\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/ti
 kz/libraries\tikzlibrarypositioning.code.tex
@@ -1422,9 +1447,9 @@ File: tikzlibrarypositioning.code.tex 2023-01-15 v3.1.10 (3.1.10)
 (Preambulo/set_beamer.tex
 (C:\Users\JASIEL\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamerfonttheme
 professionalfonts.sty)) (Preambulo/theorems.tex
-\c@mtheorem=\count399
-\c@mdefinition=\count400
-\c@axiom=\count401
+\c@mtheorem=\count409
+\c@mdefinition=\count410
+\c@axiom=\count411
 )
 (Preambulo/my_math_commands.tex)) (main.aux
 LaTeX Info: Redefining \. on input line 23.
@@ -1489,16 +1514,16 @@ LaTeX Font Info:    ... okay on input line 2.
 (C:\Users\JASIEL\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.m
 kii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count402
-\scratchdimen=\dimen345
+\scratchcounter=\count412
+\scratchdimen=\dimen346
 \scratchbox=\box173
-\nofMPsegments=\count403
-\nofMParguments=\count404
+\nofMPsegments=\count413
+\nofMParguments=\count414
 \everyMPshowfont=\toks63
-\MPscratchCnt=\count405
-\MPscratchDim=\dimen346
-\MPnumerator=\count406
-\makeMPintoPDFobject=\count407
+\MPscratchCnt=\count415
+\MPscratchDim=\dimen347
+\MPnumerator=\count416
+\makeMPintoPDFobject=\count417
 \everyMPtoPDFconversion=\toks64
 )
 (C:\Users\JASIEL\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-
@@ -1543,14 +1568,14 @@ Dictionary: translator-theorem-dictionary, Language: English
 )
 LaTeX Info: Redefining \. on input line 2.
 LaTeX Info: Redefining \% on input line 2.
-\c@lstlisting=\count408
+\c@lstlisting=\count418
  (main.nav)
-<images/ESCUDO_ESFM.png, id=37, 129.1224pt x 166.9437pt>
+<images/ESCUDO_ESFM.png, id=41, 129.1224pt x 166.9437pt>
 File: images/ESCUDO_ESFM.png Graphic file (type png)
 <use images/ESCUDO_ESFM.png>
 Package pdftex.def Info: images/ESCUDO_ESFM.png  used on input line 3.
 (pdftex.def)             Requested size: 22.00568pt x 28.45274pt.
-<images/ipn2.png, id=39, 1606.0pt x 1140.26pt>
+<images/ipn2.png, id=43, 1606.0pt x 1140.26pt>
 File: images/ipn2.png Graphic file (type png)
 <use images/ipn2.png>
 Package pdftex.def Info: images/ipn2.png  used on input line 3.
@@ -1618,10 +1643,10 @@ File: uesint.fd
 
 ] [20
 
-])
-(Secciones/RelacionesYClases.tex [21
+] [21
 
-] [22
+])
+(Secciones/RelacionesYClases.tex [22
 
 ] [23
 
@@ -1635,10 +1660,10 @@ File: uesint.fd
 
 ] [28
 
-]
-[29
+] [29
 
-] [30
+]
+[30
 
 ] [31
 
@@ -1656,10 +1681,10 @@ File: uesint.fd
 
 ] [38
 
-]) (Secciones/Clases.tex
-[39
+] [39
 
-] [40
+]) (Secciones/Clases.tex
+[40
 
 ] [41
 
@@ -1687,21 +1712,21 @@ File: uesint.fd
 
 ] [53
 
-]
-[54
-
-] [55
+] [54
 
 ]
-LaTeX Font Info:    Trying to load font information for U+euf on input line 112
+[55
+
+] [56
+
+]
+LaTeX Font Info:    Trying to load font information for U+euf on input line 113
 .
 
 (C:\Users\JASIEL\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\ueuf.fd
 File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
 )
-[56
-
-] [57
+[57
 
 ] [58
 
@@ -1729,6 +1754,46 @@ File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
 
 ] [70
 
+] [71
+
+])
+(Secciones/ConjuntoCociente.tex [72
+
+] [73
+
+] [74
+
+] [75
+
+] [76
+
+] [77
+
+] [78
+
+] [79
+
+]
+[80
+
+] [81
+
+] [82
+
+] [83
+
+] [84
+
+] [85
+
+] [86
+
+] [87
+
+] [88
+
+] [89
+
 ])
 \tf@nav=\write6
 \openout6 = `main.nav'.
@@ -1739,22 +1804,21 @@ File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
 \tf@snm=\write8
 \openout8 = `main.snm'.
 
-
-(main.aux
+ (main.aux
 LaTeX Info: Redefining \. on input line 23.
 LaTeX Info: Redefining \% on input line 23.
 )
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 0C266B66E37D62784F5D2822E6D07592;487.
+(rerunfilecheck)             Checksum: 8A21CC4EACF27D1FA8F90C1C3CFF3E63;922.
  ) 
 Here is how much of TeX's memory you used:
- 38879 strings out of 476404
- 849021 string characters out of 2789052
- 1874324 words of memory out of 3000000
- 58321 multiletter control sequences out of 15000+600000
- 522914 words of font info for 77 fonts, out of 8000000 for 9000
+ 40124 strings out of 476404
+ 876976 string characters out of 2789052
+ 1876324 words of memory out of 3000000
+ 59511 multiletter control sequences out of 15000+600000
+ 523150 words of font info for 78 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 138i,16n,128p,607b,1097s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ 138i,16n,128p,607b,1143s stack positions out of 10000i,1000n,20000p,200000b,80000s
 <C:/Users/JASIEL/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm
 /cmex10.pfb><C:/Users/JASIEL/AppData/Local/Programs/MiKTeX/fonts/type1/public/a
 msfonts/cm/cmmi10.pfb><C:/Users/JASIEL/AppData/Local/Programs/MiKTeX/fonts/type
@@ -1770,9 +1834,9 @@ onts/cm/cmsy10.pfb><C:/Users/JASIEL/AppData/Local/Programs/MiKTeX/fonts/type1/p
 ublic/amsfonts/cm/cmsy8.pfb><C:/Users/JASIEL/AppData/Local/Programs/MiKTeX/font
 s/type1/public/amsfonts/euler/eufm10.pfb><C:/Users/JASIEL/AppData/Local/Program
 s/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (70 pages, 1046554 bytes).
+Output written on main.pdf (89 pages, 1221802 bytes).
 PDF statistics:
- 2589 PDF objects out of 2984 (max. 8388607)
- 144 named destinations out of 1000 (max. 500000)
- 1775 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 3302 PDF objects out of 3580 (max. 8388607)
+ 185 named destinations out of 1000 (max. 500000)
+ 2263 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -46,16 +46,54 @@
         \begin{mdefinition}[Relación reflexiva]
             Sea $A$ un conjunto y $R\subseteq A^{2}$ una relación binaria. $R$ se dice \emph{reflexiva} si para cada $a\in A$, $aRa$.
         \end{mdefinition}
+    	\begin{figure}[H]
+    		\begin{tikzpicture}
+    			\GraphInit[vstyle=Dijkstra]
+    			\Vertices{circle}{A, B, C, D, E}
+    			\Loop[style={->},dist=1cm,dir=EA](A)
+    			\Loop[style={->},dist=1cm,dir=NO](B)
+    			\Loop[style={->},dist=1cm,dir=NOWE](C)
+    			\Loop[style={->},dist=1cm,dir=SOWE](D)
+    			\Loop[style={->},dist=1cm,dir=SO](E)
+    		\end{tikzpicture}
+    	\end{figure}
     }<1>
     \only{
         \begin{mdefinition}[Relación simétrica]
             Sea $A$ un conjunto y $R\subseteq A^{2}$ una relación binaria. $R$ se dice \emph{simétrica} si para cada $a, b\in A$, $aRb\implies bRa$.
         \end{mdefinition}
+    	\begin{figure}[H]
+    		\begin{tikzpicture}
+    			\GraphInit[vstyle=Dijkstra]
+    			\Vertices{circle}{A, B, C, D, E}
+    			\tikzset{EdgeStyle/.append style = {bend left, ->}}
+    			\Edge(A)(B)
+    			\Edge(B)(A)
+    			\Edge(C)(B)
+    			\Edge(B)(C)
+    			\Edge(D)(E)
+    			\Edge(E)(D)
+    		\end{tikzpicture}
+    	\end{figure}
     }<2>
     \only{
         \begin{mdefinition}[Relación transitiva]
             Sea $A$ un conjunto y $R\subseteq A^{2}$ una relación binaria. $R$ se dice \emph{transitiva} si para cada $a, b, c\in A$, $\pa{aRb\land bRc}\implies aRc$
         \end{mdefinition}
+    	\begin{figure}[H]
+    		\begin{tikzpicture}
+    			\GraphInit[vstyle=Dijkstra]
+    			\Vertices{circle}{A, B, C, D, E}
+    			\tikzset{EdgeStyle/.append style = {->}}
+    			\Edges[style = {->}](A, B, C, D, E)
+    			\Edge(A)(C)
+    			\Edge(B)(D)
+    			\Edge(C)(E)
+    			\Edge(A)(D)
+    			\Edge(A)(E)
+    			\Edge(B)(E)
+    		\end{tikzpicture}
+    	\end{figure}
     }<3>
 \end{frame}
 \begin{frame}{Ejercicios}
@@ -90,4 +128,19 @@
         Sea $A$ un conjunto y $R\subseteq A^{2}$ una relación. $R$ se denomina \emph{de equivalencia} si es reflexiva, simétrica y transitiva.
     \end{mdefinition}
     Para mayor eficiencia, denotaremos a una relación de equivalencia por $\sim$.
+\end{frame}
+\begin{frame}
+	\begin{figure}[H]
+		\begin{tikzpicture}[scale=2]
+			\GraphInit[vstyle=Dijkstra]
+			\Vertices{circle}{A, B, C, D}
+			\Loop[dir=EA,style={->},dist=1cm](A)
+			\Loop[dir=NO,style={->},dist=1cm](B)
+			\Loop[dir=WE,style={->},dist=1cm](C)
+			\Loop[dir=SO,style={->},dist=1cm](D)
+			\tikzset{EdgeStyle/.append style = {->, bend left=15}}
+			\Edges(A, B, C, D, C, B, A, D, A, C, A)
+			\Edges(B, D, B)
+		\end{tikzpicture}
+	\end{figure}
 \end{frame}

@@ -56,6 +56,7 @@
 \end{frame}
 \begin{frame}
 	\begin{mtheorem}[Propiedades de las clases de equivalencia]
+		\label{thm: clases}
 		Sea $ A $ un conjunto, $ \sim\subseteq A^{2} $ y $ a, b\in A $.
 		\begin{enumerate}
 			\item $ \bracket{a}\neq\varnothing $
@@ -111,6 +112,54 @@
 	\end{mdefinition}
 \end{frame}
 \begin{frame}
+	\begin{figure}[H]
+		
+		
+		\tikzset{every picture/.style={line width=0.75pt}} %set default line width to 0.75pt        
+		
+		\begin{tikzpicture}[x=0.75pt,y=0.75pt,yscale=-1,xscale=1]
+			%uncomment if require: \path (0,300); %set diagram left start at 0, and has height of 300
+			
+			%Shape: Rectangle [id:dp43293331661725487] 
+			\draw  [fill={rgb, 61:red, 26; green, 120; blue, 120 }  ,fill opacity=0.5 ] (0,0) -- (250,0) -- (250,200) -- (0,200) -- cycle ;
+			%Straight Lines [id:da5316126969281758] 
+			\draw    (0,0) -- (100,50) ;
+			%Straight Lines [id:da3315870854327041] 
+			\draw    (100,50) -- (230,0) ;
+			%Straight Lines [id:da34996079375608935] 
+			\draw    (100,50) -- (200,150) ;
+			%Straight Lines [id:da8348763175123195] 
+			\draw    (250,100) -- (150,200) ;
+			%Straight Lines [id:da06795938190747708] 
+			\draw    (100,50) -- (50,200) ;
+			%Straight Lines [id:da5655408089979519] 
+			\draw    (0,100) -- (50,200) ;
+			%Straight Lines [id:da12814303231022994] 
+			\draw    (50,200) -- (200,150) ;
+			
+			% Text Node
+			\draw (27,72.4) node [anchor=north west][inner sep=0.75pt]    {$\omega _{1}$};
+			% Text Node
+			\draw (87,12.4) node [anchor=north west][inner sep=0.75pt]    {$\omega _{2}$};
+			% Text Node
+			\draw (7,170.4) node [anchor=north west][inner sep=0.75pt]    {$\omega _{3}$};
+			% Text Node
+			\draw (111,120.4) node [anchor=north west][inner sep=0.75pt]    {$\omega _{4}$};
+			% Text Node
+			\draw (181,62.4) node [anchor=north west][inner sep=0.75pt]    {$\omega _{5}$};
+			% Text Node
+			\draw (207,170.4) node [anchor=north west][inner sep=0.75pt]    {$\omega _{6}$};
+			% Text Node
+			\draw (121,180.4) node [anchor=north west][inner sep=0.75pt]    {$\omega _{7}$};
+			% Text Node
+			\draw (261,2.4) node [anchor=north west][inner sep=0.75pt]    {$A$};
+			
+			
+		\end{tikzpicture}
+		
+	\end{figure}
+\end{frame}
+\begin{frame}
 	\begin{exercise}
 		Demuestre que dado un conjunto $ A $, $ \Omega =\mpow{A} $ no es una partición de $ A $.
 	\end{exercise}
@@ -120,7 +169,7 @@
 \end{frame}
 \begin{frame}
 	\begin{exercise}
-		Demuestre que dado un conjunto $ A $ y $ \Omega\subsetneq\mpow{A} $ una partición. $ \abs{\Omega} = 1 $ si y solo si $ \Omega =\set{A} $.
+		Demuestre que dado un conjunto $ A $ y $ \Omega\subsetneq\mpow{A} $ una partición, $ \abs{\Omega} = 1 $ si y solo si $ \Omega =\set{A} $.
 	\end{exercise}
 \end{frame}
 \begin{frame}
@@ -128,7 +177,7 @@
 \end{frame}
 \begin{frame}
 	\begin{exercise}
-		Sea $ A $ un conjunto y $ B\subsetneq A $. Demuestre que $ \Omega =\set{B,\mcomp[1]{B}} $ es una partición.
+		Sea $ A $ un conjunto y $ B\subsetneq A $. Demuestre que $ \Omega =\set{B, A\setminus B} $ es una partición.
 	\end{exercise}
 \end{frame}
 \begin{frame}
@@ -162,10 +211,4 @@
 \end{frame}
 \begin{frame}
 	
-\end{frame}
-\begin{frame}{Conjunto cociente}
-	\begin{mdefinition}[Conjunto cociente]
-		Sea $ A $ un conjunto y $ \sim\subseteq A^{2} $ una relación de equivalencia. Definimos al \emph{conjunto cociente} de $ A $ bajo $ \sim $ como:
-		\[ A/\sim\coloneqq\set{\bracket{a}: a\in\tilde{R}} \]
-	\end{mdefinition}
 \end{frame}

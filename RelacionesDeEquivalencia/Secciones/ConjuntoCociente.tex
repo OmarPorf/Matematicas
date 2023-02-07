@@ -1,0 +1,97 @@
+\section{Conjunto cociente y teorema fundamental de las relaciones de equivalencia}
+\begin{frame}{Conjunto cociente}
+	\begin{mdefinition}[Conjunto cociente]
+		Sea $ A $ un conjunto y $ \sim\subseteq A^{2} $ una relación de equivalencia. Definimos al \emph{conjunto cociente} de $ A $ bajo $ \sim $ como:
+		\[ A/\sim\coloneqq\set{\bracket{a}: a\in\tilde{R}} \]
+	\end{mdefinition}
+\end{frame}
+\begin{frame}{Conjunto cociente de módulos}
+	Sabemos que el conjunto de representantes de la relación de módulos es:
+	\[ \tilde{R} =\set{0, 1,\dotsc, n - 1} \]
+	Por lo tanto, el conjunto cociente de la relación de módulos es:
+	\[ \zmath / \sim =\set{\bracket{0},\bracket{1},\dotsc,\bracket{n - 1}} \]
+\end{frame}
+\begin{frame}{Conjunto cociente de fracciones equivalentes}
+	Sabemos que el conjunto de representantes de fracciones equivalentes es:
+	\[ \tilde{R} =\set{(a, b)\in\nmath[2]: \mmcd{a, b} = 1} \]
+	Por lo tanto, el conjunto cociente de la relación de fracciones equivalentes es:
+	\[ \nmath[2] / \sim =\set{\bracket{(a, b)}: \mmcd{a, b} = 1} \]
+\end{frame}
+\begin{frame}
+	\begin{mtheorem}
+		\label{thm: particion}
+		Sean $A$ un conjunto y $\sim\subseteq A^{2}$ una relación de equivalencia, entonces $A / \sim$ es una partición de $A$.
+	\end{mtheorem}
+\end{frame}
+\begin{frame}{Demostración}
+	\begin{proof}
+		\begin{itemize}
+			\only{
+				\item $A / \sim$ no tiene elementos vacíos\\
+				Sabemos que cada clase es no vacía por el teorema \ref{thm: clases}. Por lo tanto, $A / \sim$ es de elementos no vacíos.
+			}<1>
+			\only{
+				\item La unión de los elementos es $A$\\
+				Otra forma de verlo es que cualquier elemento $a\in A$ está en alguna clase de equivalencia. Dado que $a\sim a$, entonces $a\in\bracket{a}$, pero sabemos que toda clase tiene un representante, por lo tanto existe un $\bracket{r}\in A / \sim$ tal que $a\in\bracket{a} =\bracket{r}$. Por lo tanto, la unión de clases de equivalencia es $A$.
+			}<2>
+			\only{
+				\item Los elementos son disjuntos\\
+				Dado que cada $r\in\tilde{R}$ es un representante único de cada clase, entonces si $r, s\in\tilde{R}$ tales que $r\neq s$, entonces $\bracket{r}\neq\bracket{s}$ y por el teorema \ref{thm: clases} $\bracket{r}\cap\bracket{s} =\varnothing$. Por lo tanto, los elementos de $A / \sim$ son disjuntos.
+			}<3>
+		\end{itemize}
+		\only{Por lo tanto, $A / \sim$ es una partición de $A$}<3>
+	\end{proof}
+\end{frame}
+\begin{frame}
+	De hecho, hay una relación entre las particiones de un conjunto y las relaciones de equivalencia sobre ese conjunto. Esta relación nos permite crear relaciones de equivalencia que nos convengan para partir un conjunto en particiones que nos interese tener.
+\end{frame}
+\begin{frame}{Teorema fundamental de las relaciones de equivalencia}
+	\begin{mtheorem}[Teorema fundamental de las relaciones de equivalencia]
+		Sea $A$ un conjunto. 
+		\begin{enumerate}
+			\item Si una relación $\sim\subseteq A^{2}$ es de equivalencia, entonces $A / \sim$ es una partición de $A$.
+			\item Si $\Omega\subsetneq\mpow{A}$ es una partición de $A$, entonces existe una relación de equivalencia $\sim\subseteq A^{2}$ tal que $A / \sim = \Omega$.
+		\end{enumerate}
+	\end{mtheorem}
+\end{frame}
+\begin{frame}{Demostración}
+	\begin{proof}
+		\only{
+			El primer punto se demostró en el teorema \ref{thm: particion}. Entonces solo demostremos el segundo punto.\par 
+			Sea $\Omega\subsetneq\mpow{A}$ una partición de $A$. Definamos a la relación $\sim\subseteq A^{2}$ como:
+			\[ a\sim b\iff\text{ existe $\omega\in\Omega$ tal que }a, b\in\omega \] 
+			Demostremos que esta relación es de equivalencia.
+		}<1>
+		\begin{itemize}
+			\only{
+				\item Reflexividad\\
+				Dado que $\Omega$ es una partición, existe $\omega\in\Omega$ tal que $a\in\omega$. Por lo tanto, $a\sim a$.
+			}<2>
+			\only{
+				\item Simetría\\
+				Sean $a, b\in A$ tales que $a\sim b$, entonces existe $\omega\in\Omega$ tal que $a, b\in\omega$. Claramente $b\sim a$.
+			}<3>
+			\only{
+				\item Transitividad\\
+				Sean $a, b, c\in A$ tales que $a\sim b$ y $b\sim c$, entonces existen $\upsilon,\omega\in\Omega$ tales que $a, b\in\upsilon$ y $b, c\in\omega$. Dado que $b\in\upsilon, \omega$, entonces $b\in\upsilon\cap\omega$. Supongamos que $\upsilon\neq\omega$, entonces $\upsilon\cap\omega =\varnothing$ al ser particiones de $A$, pero $b\in\upsilon\cap\omega$, por lo tanto $\upsilon\cap\omega\neq\varnothing$, lo cual es una contradicción. Por lo tanto, $\upsilon =\omega$ y entonces $a, c\in\omega$, es decir, $a\sim c$.
+			}<4>
+			\item[\textcolor{pgay1!10}{.}] 
+		\end{itemize}
+		\only{Por lo tanto, $\sim$ es de equivalencia y entonces podemos determinar $A / \sim$.\par 
+		Sabemos que dado $a\in A$, existe $\omega\in\Omega$ tal que $a\in\omega$. Demostremos que $\bracket{a} =\omega$}<5>
+		\only{
+			Primero demostremos que $\bracket{a}\subseteq\omega$.\par 
+			Sea $b\in\bracket{a}$, entonces $a\sim b$, es decir, $a, b\in\omega$. En particular, se tiene que $b\in\omega$, por lo tanto, $\bracket{a}\subseteq\omega$.
+		}<6>
+		\only{
+			Ahora demostremos que $\omega\subseteq\bracket{a}$.\par 
+			Sea $b\in\omega$. Dado que $a\in\omega$, entonces $a, b\in\omega$ y por consiguiente $a\sim b$. En consecuencia, $b\in\bracket{a}$ y por lo tanto, $\omega\subseteq\bracket{a}$.\par 
+			Por lo tanto, $\bracket{a} =\omega$.
+		}<7>	
+		\only{
+			Dado que para cada $a\in A$ existe $\omega\in\Omega$ tal que $a\in\omega$, entonces por lo anterior tenemos que:
+			\[ A/\sim =\set{[a]: a\in A} =\set{\omega: \omega\in\Omega} =\Omega \]
+			Dando por demostrado el teorema.
+		}<8>
+	\end{proof}
+\end{frame}

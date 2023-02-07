@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.12) (preloaded format=pdflatex 2023.1.27)  6 FEB 2023 20:41
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.12) (preloaded format=pdflatex 2023.1.27)  6 FEB 2023 20:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1809,13 +1809,13 @@ LaTeX Info: Redefining \. on input line 23.
 LaTeX Info: Redefining \% on input line 23.
 )
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 8A21CC4EACF27D1FA8F90C1C3CFF3E63;922.
+(rerunfilecheck)             Checksum: 2213BAE64D23F232721AA66390E42A2E;755.
  ) 
 Here is how much of TeX's memory you used:
- 40124 strings out of 476404
- 876976 string characters out of 2789052
+ 40118 strings out of 476404
+ 876714 string characters out of 2789052
  1876324 words of memory out of 3000000
- 59511 multiletter control sequences out of 15000+600000
+ 59505 multiletter control sequences out of 15000+600000
  523150 words of font info for 78 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  138i,16n,128p,607b,1143s stack positions out of 10000i,1000n,20000p,200000b,80000s
@@ -1834,9 +1834,9 @@ onts/cm/cmsy10.pfb><C:/Users/JASIEL/AppData/Local/Programs/MiKTeX/fonts/type1/p
 ublic/amsfonts/cm/cmsy8.pfb><C:/Users/JASIEL/AppData/Local/Programs/MiKTeX/font
 s/type1/public/amsfonts/euler/eufm10.pfb><C:/Users/JASIEL/AppData/Local/Program
 s/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (89 pages, 1221802 bytes).
+Output written on main.pdf (89 pages, 1216444 bytes).
 PDF statistics:
- 3302 PDF objects out of 3580 (max. 8388607)
+ 3279 PDF objects out of 3580 (max. 8388607)
  185 named destinations out of 1000 (max. 500000)
- 2263 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2257 words of extra memory for PDF output out of 10000 (max. 10000000)
 

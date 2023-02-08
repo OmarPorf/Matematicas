@@ -61,6 +61,17 @@
 	leftline = true,
 	innertopmargin = \topskip
 }
+\newtcolorbox{notation}[1][]{
+	title={\scalebox{1.75}{\raisebox{-.25ex}{\ding{43}}}~Notación},
+	colframe=black!10!white,
+	colback=black!10!white,
+	coltitle=black,
+	fontupper=\sffamily,
+	boxed title style={colback=black!10!white},
+	boxed title style={boxsep=1ex,sharp corners},%%
+	overlay unbroken and first={ \node[below right,font=\normalsize,color=red,text width=.8\linewidth] at (title.north east) {#1};
+	}
+}
 % Definición de los entornos de teoremas
 \mdtheorem[style = azul]{axiom}{Axioma}[section]
 \mdtheorem[style = morado]{theorem}{Teorema}[section]

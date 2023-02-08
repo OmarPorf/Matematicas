@@ -1,0 +1,25 @@
+\setbeamertemplate{theorems}[numbered]
+\newtheorem{mtheorem}{Teorema}[section]
+\newtheorem{mdefinition}{Definición}[section]
+\AtBeginEnvironment{mdefinition}{
+    \setbeamercolor{block title}{bg=pgay6, fg=white}
+	\setbeamercolor{block body}{bg=pgay6!10!white, fg=black}
+}
+\AtBeginEnvironment{mtheorem}{
+	\setbeamercolor{block title}{bg=pgay5, fg=white}
+	\setbeamercolor{block body}{bg=pgay5!10!white, fg=black}
+}
+\newtheorem{axiom}{Axioma}[section]
+\newtheorem{coll}[mtheorem]{Corolario}
+\AtBeginEnvironment{axiom}{
+    \setbeamercolor{block title}{bg=pgay4, fg=white}
+	\setbeamercolor{block body}{bg=pgay4!10!white, fg=black}
+}
+\AtBeginEnvironment{coll}{
+    \setbeamercolor{block title}{bg=pgay3, fg=white}
+	\setbeamercolor{block body}{bg=pgay3!10!white, fg=black}
+}
+
+\newenvironment{exercise}{\begin{block}{Ejercicio:}}{\end{block}}
+\renewenvironment{example}{\begin{exampleblock}{Ejemplo: }}{\end{exampleblock}}
+\newenvironment{remark}{\begin{alertblock}{Observación:}}{\end{alertblock}}

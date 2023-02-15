@@ -1,0 +1,78 @@
+\section{Integrales indefinidas}
+\begin{itemize}
+	\item $\ds\mint[1]{f(x) + g(x)}{x} =\mint{f(x)}{x} + \mint{g(x)}{x}$
+	\item $\ds\mint{kf(x)}{x} =k\mint{f(x)}{x}$
+	\item $\ds\mint{f(u(x))u'(x)}{x} =\mint{f(u)}{u}$
+	\item $\ds\mint{f(x)g'(x)}{x} = f(x)g(x) -\mint{f'(x)g(x)}{x}$
+	\item $\ds\mint{k}{x} = kx + C$
+	\item $\ds\mint{x^{n}}{x} =\dfrac{x^{n + 1}}{n + 1} + C ; n\neq -1$
+	\item $\ds\mint{\dfrac{1}{x}}{x} =\mln[1]{\abs{x}} + C$
+	\item $\ds\mint{e^{x}}{x} = e^{x} + C$
+	\item $\ds\mint{a^{x}}{x} =\dfrac{a^{x}}{\mln{a}} + C$
+	\item $\ds\mint{\msin{x}}{x} = -\mcos{x} + C$
+	\item $\ds\mint{\mcos{x}}{x} = \msin{x} + C$
+	\item $\ds\mint{\mtan{x}}{x} =\mln[1]{\abs{\msec{x}}} + C$
+	\item $\ds\mint{\mcot{x}}{x} =\mln[1]{\abs{\msin{x}}} + C$
+	\item $\ds\mint{\msec{x}}{x} =\mln[1]{\abs{\msec{x} +\mtan{x}}} + C$
+	\item $\ds\mint{\mcsc{x}}{x} =\mln[1]{\abs{\mcsc{x} -\mcot{x}}} + C$
+	\item $\ds\mint{\msec{x}[2]}{x} =\mtan{x} + C$
+	\item $\ds\mint{\mcsc{x}[2]}{x} =\mcot{x} + C$
+	\item $\ds\mint{\msec{x}\mtan{x}}{x} =\msec{x} + C$
+	\item $\ds\mint{\mcsc{x}\mcot{x}}{x} = -\mcsc{x} + C$
+	\item $\ds\mint{\dfrac{1}{\sqrt{a^{2} - x^{2}}}}{x} =\marcsin{\dfrac{x}{a}} + C$
+	\item $\ds\mint{\dfrac{1}{x^{2} + a^{2}}}{x} =\dfrac{1}{a}\marctan{\dfrac{x}{a}} + C$
+	\item $\ds\mint{\dfrac{1}{x\sqrt{x^{2} - a^{2}}}}{x} =\dfrac{1}{a}\marcsec{\dfrac{x}{a}} + C$
+	\item $\ds\mint{\dfrac{1}{x^{2} - a^{2}}}{x} =\dfrac{1}{2a}\mln[1]{\abs{\dfrac{x - a}{x + a}}} + C$
+	\item $\ds\mint{\msin{x}[2]}{x} =\dfrac{1}{2}\pa{x -\msin{x}\mcos{x}} + C$
+	\item $\ds\mint{\mcos{x}[2]}{x} =\dfrac{1}{2}\pa{x +\msin{x}\mcos{x}} + C$
+	\item $\ds\mint{\mtan{x}[2]}{x} =-x +\mtan{x} + C$
+	\item $\ds\mint{\mcot{x}[2]}{x} =-x -\mcot{x} + C$
+	\item Sea $\ds F(n) =\mint{\msin{x}[n]}{x}$, entonces:
+	\[ F(n) = -\frac{1}{n}\msin{x}[n - 1]\mcos{x} +\frac{n - 1}{n}F(n - 2) \]
+	\item Sea $\ds F(n) =\mint{\mcos{x}[n]}{x}$, entonces:
+	\[ F(n) =\frac{1}{n}\mcos{x}[n - 1]\msin{x} +\frac{n - 1}{n}F(n - 2) \]
+	\item Sea $\ds F(n) =\mint{\mtan{x}[n]}{x}$, entonces:
+	\[ F(n) =\dfrac{1}{n - 1}\mtan{x}[n - 1] - F(n - 2) \]
+	\item Sea $\ds F(n) =\mint{\mcot{x}[n]}{x}$, entonces:
+	\[ F(n) = -\dfrac{1}{n - 1}\mcot{x}[n - 1] - F(n - 2) \]
+	\item Sea $\ds F(n) =\mint{\msec{x}[n]}{x}$, entonces:
+	\[ F(n) =\dfrac{1}{n - 1}\msec{x}[n - 2]\mtan{x} +\dfrac{n - 2}{n - 1}F(n - 2) \]
+	\item Sea $\ds F(n) =\mint{\mcsc{x}[n]}{x}$, entonces:
+	\[ F(n) = -\dfrac{1}{n - 1}\mcsc{x}[n - 2]\mcot{x} +\dfrac{n - 2}{n - 1}F(n - 2) \]
+	\item $\ds\mint{x^{n}e^{x}}{x} =x^{n}e^{x} - n\mint{x^{n - 1}e^{x}}{x}$
+	\item $\ds\mint{\dfrac{1}{1 + e^{x}}}{x} = x -\mln{1 + e^{x}} + C$
+	\item $\ds\mint{e^{ax}\msin{bx}}{x} =\dfrac{e^{ax}\pa{a\msin{bx} - b\mcos{bx}}}{a^{2} + b^{2}}$
+	\item $\ds\mint{e^{ax}\mcos{bx}}{x} =\dfrac{e^{ax}\pa{a\mcos{bx} + b\msin{bx}}}{a^{2} + b^{2}}$
+	\item $\ds\mint{\mln{x}}{x} =x\pa{\mln{x} - 1} + C$
+	\item $\ds\mint{x\mln{x}}{x} =\dfrac{x^{2}}{4}\pa{2\mln{x} - 1} + C$
+	\item $\ds\mint{x^{n}\mln{x}}{x} =\dfrac{x^{n + 1}}{(n + 1)^{2}}\pa{(n + 1)\mln{x} - 1} + C$
+	\item $\ds\mint{\pa{\mln{x}}^{2}}{x} =x\pa{\pa{\mln{x}}^{2} - 2\mln{x} + 2} + C$
+	\item $\ds\mint{\pa{\mln{x}}^{n}}{x} =x\pa{\mln{x}}^{n} - n\mint{\pa{\mln{x}}^{n - 1}}{x}$
+	\item Sustitución trigonométrica
+	\begin{table}[H]
+		\centering
+		\begin{tabular}{ccc}
+			Expresión & Sustitución & Raíz \\
+			$\sqrt{a^{2} - x^{2}}$ & $x = a\msin{\theta}$ & $a\mcos{\theta}$ \\
+			$\sqrt{x^{2} + a^{2}}$ & $x = a\mtan{\theta}$ & $a\msec{\theta}$ \\
+			$\sqrt{x^{2} - a^{2}}$ & $x = a\msec{\theta}$ & $a\mtan{\theta}$
+		\end{tabular}
+	\end{table}
+\end{itemize}
+\section{Integrales definidas}
+\begin{itemize}
+	\item Teorema fundamental del cálculo (2)\\
+	Sea $f:\bracket{a, b}\to\rmath$ integrable y $F:\rmath\to\rmath$ una de sus antiderivadas, entonces:
+	\[ \mint{f(x)}{x}[a][b] =\meval{F(x)}[a][b] = F(b) - F(a) \]
+	\item $\ds\mint[1]{f(x) + g(x)}{x}[a][b] =\mint{f(x)}{x}[a][b] + \mint{g(x)}{x}[a][b]$
+	\item $\ds\mint{kf(x)}{x}[a][b] =k\mint{f(x)}{x}[a][b]$
+	\item $\ds\mint{f(x)}{x}[a][b] = -\mint{f(x)}{x}[b][a]$
+	\item $\ds\mint{f(x)}{x}[a][a] = 0$
+	\item $\ds\mint{f(x)}{x}[a][b] =\mint{f(x)}{x}[a][c] +\mint{f(x)}{x}[c][b]$
+	\item Si $f:\bracket{-a, a}\to\rmath$ es par: 
+	\[ \ds\mint{f(x)}{x}[-a][a] =2\mint{f(x)}{x}[0][a] \]
+	\item Si $f:\bracket{-a, a}\to\rmath$ es impar: 
+	\[ \ds\mint{f(x)}{x}[-a][a] = 0 \]
+	\item $\ds\mint{f(u(x))u'(x)}{x}[a][b] =\mint{f(x)}{x}[u(a)][u(b)]$
+	\item $\ds\mint{f(x)g'(x)}{x}[a][b] =\meval{f(x)g(x)}[a][b] -\mint{f'(x)g(x)}{x}[a][b]$
+\end{itemize}

@@ -1,0 +1,637 @@
+\section{Teoría de gráficas}
+\subsection{Combinatoria}
+\begin{notation}
+	Sea $n\in\nmath$. Definimos a $\bbracket{n}\coloneqq\set{1, 2,\dotsc, n}$.
+\end{notation}
+\begin{definition}[Conjuntos finitos e infinitos]
+	Sea $X$ un conjunto cualquiera. $X$ se considera \emph{finito} si existe $n\in\nmath$ tal que existe una función biyectiva $f : X\to\bbracket{n}$ o bien $X =\varnothing$.\par 
+	Si $X$ no es finito, se dice \emph{infinito}.
+\end{definition}
+\begin{definition}[Cardinalidad]
+	Sea $X$ un conjunto finito. La \emph{cardinalidad} de $X$ se define por:
+	\[ 
+		\abs{X}\coloneqq
+		\begin{cases}
+			0, & X =\varnothing\\
+			n, & \text{existe $n\in\nmath$ tal que existe $f : X\to\bbracket{n}$ biyectiva}
+		\end{cases}
+	\]
+\end{definition}
+\begin{theorem}
+	Sean $X, Y$ conjuntos finitos disjuntos, entonces:
+	\[ \abs{X\sqcup Y} =\abs{X} +\abs{Y} \]
+\end{theorem}
+\begin{coll}[Principio aditivo]
+	Sean $X_{1},\dotsc, X_{n}$ conjuntos finitos disjuntos por pares, entonces:
+	\[ \abs{\bigsqcup_{i = 1}^{n}X_{i}} =\sum_{i = 1}^{n}\abs{X_{i}} \]
+\end{coll}
+\begin{theorem}[Principio de inclusión-exclusión]
+	Sean $X, Y$ conjuntos finitos, entonces:
+	\[ \abs{X\cup Y} =\abs{X} + \abs{Y} -\abs{X\cap Y} \]
+\end{theorem}
+\begin{coll}[Principio de inclusión-exclusión generalizado]
+	Sean $X_{1},\dotsc, X_{n}$ conjuntos finitos, entonces:
+	\[ \abs{\bigcup_{i = 1}^{n}X_{i}} =\sum_{k = 1}^{n + 1}\pa{(-1)^{k + 1}\sum_{i_{1}<\dotsb<i_{k}\leq n}\abs{\bigcap_{j = 1}^{k}X_{i_{j}}}} \]
+\end{coll}
+\begin{theorem}
+	Sean $X, Y$ conjuntos finitos, entonces:
+	\[ \abs{X\times Y} =\abs{X}\abs{Y} \]
+\end{theorem}
+\begin{coll}[Principio multiplicativo]
+	Sean $X_{1},\dotsc, X_{n}$ conjuntos finitos, entonces:
+	\[ \abs{\prod_{i = 1}^{n}X_{i}} =\prod_{i = 1}^{n}\abs{X_{i}} \]
+\end{coll}
+\begin{theorem}
+	Sea $X$ un conjunto finito, entonces:
+	\[ \abs{\mpow{X}} = 2^{\abs{X}} \]
+\end{theorem}
+\begin{definition}[Permutaciones]
+	Sea $X =\set{a_{1},\dotsc, a_{n}}$ un conjunto finito. Definimos a las \emph{permutaciones} de $A$, denotado por $S_{X}$, como:
+	\[ S_{X}\coloneqq\set{\pa{a_{i_{1}},\dotsc, a_{i_{n}}}:j\neq k\implies i_{j}\neq i_{k}} \]
+\end{definition}
+\begin{theorem}
+	Sea $X$ un conjunto finito, entonces:
+	\[ \abs{S_{X}} = \abs{X}! \]
+\end{theorem}
+\begin{definition}[Coeficiente binomial]
+	Sean $X$ un conjunto finito tal que $\abs{X} = n$ y $k\in\nmath$ tal que $k\leq n$. El \emph{coeficiente binomial} de $n$ en $k$ se define por:
+	\[ \binom{n}{k}\coloneqq\abs{\set{E\in\mpow{X}:\abs{E} = k}} \]
+\end{definition}
+\begin{theorem}
+	Sean $n, k\in\nmath$ tales que $k\leq n$, entonces:
+	\[ \binom{n}{k} =\dfrac{n!}{(n - k)!k!} \]
+\end{theorem}
+\begin{theorem}[Propiedades del coeficiente binomial]
+	Sean $n, k\in\nmath$ tales que $k\leq n$, entonces:
+	\begin{multicols}{2}
+		\begin{enumerate}
+			\item $\ds\binom{n}{0} = 1$
+			\item $\ds\binom{n}{1} = n$
+			\item $\ds\binom{n}{2} = \dfrac{n(n - 1)}{2}$
+			\item $\ds\binom{n}{k} =\binom{n}{n - k}$
+			\item $\ds\binom{n + 1}{k + 1} =\binom{n}{k} +\binom{n}{k + 1}$
+		\end{enumerate}
+	\end{multicols}
+\end{theorem}
+\begin{theorem}[Binomio de Newton]
+	Sean $a, b\in\rmath$ y $n\in\nmath$, entonces:
+	\[ (a + b)^{n} =\sum_{k = 0}^{n}\binom{n}{k}a^{n - k}b^{k} \]
+\end{theorem}
+\begin{coll}
+	Sea $n\in\nmath$, entonces:
+	\[ \sum_{k = 0}^{n}\binom{n}{k} = 2^{n} \]
+\end{coll}
+\begin{theorem}[Principio del palomar]
+	Sean $X, Y$ conjuntos finitos tales que $\abs{X} >\abs{Y}$, entonces no existe $f : X\to Y$ inyectiva.
+\end{theorem}
+\begin{theorem}[Principio general del palomar]
+	Sean $X, Y$ conjuntos finitos tales que $\abs{X} = n > m =\abs{Y}$ y además existe $k\in\nmath$ tal que $n > km$, entonces para cada $f : X\to Y$ existe al menos un $y\in Y$ tal que $\abs{\minv{f}(b)} > k$.
+\end{theorem}
+\begin{theorem}[Equivalencia del principio general del palomar]
+	Sean $X, Y$ conjuntos finitos tales que $\abs{X} = n > m =\abs{Y}$ y además existe $k\in\nmath$ tal que $n\geq(k - 1)m + 1$, entonces para cada $f : X\to Y$ existe al menos un $y\in Y$ tal que $\abs{\minv{f}(b)}\geq k$.
+\end{theorem}
+\subsection{Gráficas}
+\begin{definition}[Gráfica]
+	Una \emph{gráfica} es una terna $(V, E,\varphi)$ tal que:
+	\begin{enumerate}
+		\item $V\neq\varnothing$
+		\item $E\cap V =\varnothing$
+		\item $\varphi : E\to\set{A\in\mpow{V}:0 <\abs{A}\leq 2}$ es una función.
+	\end{enumerate}
+	$V$ se denomina \emph{conjunto de vértices} y $E$ se denomina \emph{conjunto de aristas}.
+\end{definition}
+\begin{figure}[H]
+	\centering
+	\begin{tikzpicture}
+		\GraphInit[vstyle=Simple]
+		
+		\SetVertexSimple[FillColor=teal]
+		\Vertices{circle}{a, b, c, d}
+		\Edges(a, b, d, c, b)
+		\Loop[dist=1cm,dir=EA,color=purple](a)
+		\Edge[style={bend right}](c)(d)
+	\end{tikzpicture}
+\end{figure}
+\begin{definition}[Conceptos básicos]
+	Sea $G =(V, E,\varphi)$ una gráfica. 
+	\begin{itemize}
+		\item Si $v\in V$ y $e\in E$, entonces se dice que $v$ \emph{incide} en $e$ si $v\in\varphi(e)$.
+		\item Si $e\in E$, entonces a los $v, w\in V$ tales que $\varphi(e) =\set{v, w}$ se les dice \emph{extremos} de $e$.
+		\item Si dos vértices son extremos de una arista, se dice que son \emph{adyacentes}.
+		\item Si $e, f\in E$ tales que $\varphi(e)\cap\varphi(f)\neq\varnothing$, entonces se denominan \emph{adyacentes}.
+		\item A una arista $e\in E$ tal que $\abs{\varphi(e)} = 1$ se denomina \emph{lazo}, \emph{bucle} o \emph{loop}.
+		\item A las aristas $e, f\in E$ tales que $e\neq f$, $\abs{\varphi(e)} =\abs{\varphi(f)} = 2$ y $\varphi(e) =\varphi(f)$ se denominan \emph{múltiples}.
+	\end{itemize}
+\end{definition}
+\begin{definition}[Gráfica simple]
+	Sea $G$ una gráfica. $G$ se denomina \emph{simple} si no tiene loops ni aristas múltiples.
+\end{definition}
+\begin{figure}[H]
+	\centering
+	\begin{tikzpicture}
+		\GraphInit[vstyle=Simple]
+		
+		\SetVertexSimple[FillColor=teal]
+		\Vertices{circle}{a, b, c, d}
+		\foreach \ver in {a, b, c}{\Edge(d)(\ver)}
+		\foreach \ver in {b, c}{\Edge(a)(\ver)}
+	\end{tikzpicture}
+\end{figure}
+\begin{definition}[Isomorfismo]
+	Sean $G = (V, E,\varphi), G' = (V', E',\varphi')$ gráficas. Un par de funciones $(\phi_{v},\phi_{e})$ donde $\phi_{v} : V\to V', \phi_{e} : E\to E'$ son biyectivas y además para cada $e\in E$ tal que $\varphi(e) =\set{u, v}$ se cumple que $\varphi'\pa{\phi_{e}(e)} =\set{\phi_{v}(u),\phi_{v}(v)}$ se denomina \emph{isomorfismo} entre $G, G'$.\par 
+	Si existe un isomorfismo entre $G, G'$, entonces $G$ y $G'$ se dicen \emph{isomorfas} y se denota por $G\cong G'$.
+\end{definition}
+\begin{figure}[H]
+	\centering
+	\begin{tikzpicture}
+		\GraphInit[vstyle=Simple]
+		
+		\SetVertexSimple[FillColor=teal]
+		\SetGraphUnit{2}
+		\Vertices{circle}{a, b, c, d, e, f, g, h}
+		\Edges(a, b, c, d, a)
+		\Edges(f, g, e, h, f)
+	\end{tikzpicture}
+\end{figure}
+\begin{definition}[Gráfica completa]
+	Sea $n\in\nmath$. La gráfica $K_{n}$ simple tal que cada par de vértices son adyacentes se denomina \emph{completa}.
+\end{definition}
+\begin{figure}[H]
+	\centering
+	\begin{tikzpicture}
+		\GraphInit[vstyle=Simple]
+		
+		\SetVertexSimple[FillColor=teal]
+		\Vertices{circle}{a, b, c, d, e}
+		\Edges(a, b, c, d, e, a, d, b, e, c, a)
+	\end{tikzpicture}
+\end{figure}
+\begin{definition}[Trayectoria]
+	Sea $n\in\nmath$. La gráfica $T_{n}$ simple se denomina \emph{trayectoria} si $V\pa{T_{n}} =\set{v_{1},\dotsc, v_{n}}$ y $E\pa{T_{n}} =\set{v_{1}v_{2},\dotsc, v_{n - 1}v_{n}}$.
+\end{definition}
+\begin{figure}[H]
+	\centering
+	\begin{tikzpicture}
+		\GraphInit[vstyle=Simple]
+		\SetVertexSimple[FillColor=teal]
+		\Vertex{a}
+		\EA(a){b}\EA(b){c}\EA(c){d}
+		\Edges(a, b, c, d)
+	\end{tikzpicture}
+\end{figure}
+\begin{definition}[Ciclo]
+	Sea $n\in\nmath$ con $n\geq 3$. La gráfica $C_{n}$ simple tal que:
+	\[ C_{n} = T_{n} + v_{n}v_{1} \]
+	se denomina \emph{ciclo}.
+\end{definition}
+\begin{figure}[H]
+	\centering
+	\begin{tikzpicture}
+		\GraphInit[vstyle=Simple]
+		
+		\SetVertexSimple[FillColor=teal]
+		\Vertices{circle}{a, b, c, d, e, f}
+		\Edges(a, b, c, d, e, f, a)
+	\end{tikzpicture}
+\end{figure}
+\begin{definition}[Estrella]
+	Sea $n\in\nmath$. La gráfica $S_{n}$ simple tal que $V\pa{S_{n}} =\set{v_{0},\dotsc, v_{n}}$ y $E\pa{S_{n}} =\set{v_{0}v_{k}: 1\leq k\leq n}$ se denomina \emph{estrella}.
+\end{definition}
+\begin{figure}[H]
+	\centering
+	\begin{tikzpicture}
+		\GraphInit[vstyle=Simple]
+		
+		\SetVertexSimple[FillColor=teal]
+		\Vertices{circle}{b, c, d, e, f, g, h, i}
+		\coordinate (a) at ($(b)!0.5!(f)$);
+		\Vertex[Node]{a}
+		\foreach \ver in {b, c, d, e, f, g, h, i}{\Edge(a)(\ver)}
+	\end{tikzpicture}
+\end{figure}
+\begin{definition}[Rueda]
+	Sea $n\in\nmath$ con $n\geq 3$. La gráfica $W_{n}$ simple tal que:
+	\[ W_{n} = C_{n} + S_{n} \]
+	se denomina \emph{rueda}.
+\end{definition}
+\begin{figure}[H]
+	\centering
+	\begin{tikzpicture}
+		\GraphInit[vstyle=Simple]
+		
+		\SetVertexSimple[FillColor=teal]
+		\Vertex{a}
+		\NO(a){b}\SO(a){d}\EA(a){c}\WE(a){e}
+		\foreach \ver in {b, c, d, e}{\Edge(a)(\ver)}
+		\Edges(b, c, d, e, b)
+	\end{tikzpicture}
+\end{figure}
+\begin{definition}[Grado de un vértices]
+	Sea $G$ una gráfica y $v\in V(G)$, entonces definimos al \emph{grado} de $v$ como:
+	\[ \mdeg{v}[G]\coloneqq\abs{\set{e\in E(G): v\in\varphi(e),\abs{\varphi(e)} = 2}} + 2\abs{\set{e\in E(G):\varphi(e) = 1}} \]
+	Además, definimos al \emph{grado máximo} y \emph{mínimo} de $G$ como:
+	\begin{itemize}
+		\item $\ds\delta(G)\coloneqq\mmin[1]{\mdeg{v}[G]}[v\in V(G)]$
+		\item $\ds\Delta(G)\coloneqq\mmax[1]{\mdeg{v}[G]}[v\in V(G)]$
+	\end{itemize}
+\end{definition}
+\begin{theorem}
+	Sea $G$ una gráfica, entonces:
+	\[ \sum_{v\in V(G)}\mdeg{v}[G] = 2e(G) \]
+\end{theorem}
+\begin{coll}
+	Cualquier gráfica tiene un número par de vértices impares.
+\end{coll}
+\begin{definition}[Regularidad]
+	Sea $G$ una gráfica y $k\in\nmath$. $G$ se denomina \emph{$k$-regular} si $\delta(G) = k =\Delta(G)$. Una gráfica se dice solamente \emph{regular} si existe $k\in\nmath$ tal que es $k$-regular.
+\end{definition}
+\begin{theorem}
+	Sea $G$ una gráfica $k$-regular para algún $k\in\nmath$, entonces:
+	\[ e(G) =\dfrac{v(G)k}{2} \]
+\end{theorem}
+\begin{definition}[Representanción matricial de una gráfica]
+	\label{def: representacion_matricial}
+	Sea $G = (V, E,\varphi)$ con $V =\set{v_{1},\dotsc, v_{n}}$ y $E =\set{e_{1},\dotsc, e_{m}}$. (vea la figura \ref{fig: rep_mat})
+	\begin{enumerate}
+		\item Matriz de incidencia\\
+		La \emph{matriz de incidencia} de $G$ es una matriz $M_{I}\in\mmatrix{\rmath}{nm}$ con $M_{I} =\pa{m_{ij}}$ donde:
+		\begin{align*}
+				m_{ij}\coloneqq
+			\begin{cases}
+				0, & v_{i}\notin\varphi\pa{e_{j}}\\
+				1, & v_{i}\in\varphi\pa{e_{j}}, \abs{\varphi\pa{e_{j}}} = 2\\
+				2, & v_{i}\in\varphi\pa{e_{j}}, \abs{\varphi\pa{e_{j}}} = 1
+			\end{cases},
+			M_{I}(G) =
+			\begin{pNiceMatrix}[first-row,first-col]
+				      & e_{1} & e_{2} & e_{3} & e_{4}\\
+				v_{1} &   1   &   1   &   0   &   0   \\
+				v_{2} &   0   &   0   &   1   &   2   \\
+				v_{3} &   1   &   1   &   1   &   0
+			\end{pNiceMatrix}
+		\end{align*}
+		\item Matriz de adyacencia\\
+		La \emph{matriz de adyacencia} de $G$ es una matriz $M_{A}\in\mmatrix{\rmath}{nn}$ con $M_{A} =\pa{m_{ij}}$ donde:
+		\begin{align*}
+			m_{ij}\coloneqq
+			\begin{cases}
+				\abs{\set{e\in E:\varphi(e) =\set{v_{i}, v_{j}}}}, & i\neq j\\
+				2\abs{\set{e\in E: \varphi(e) =\set{v_{i}}}}, & i = j
+			\end{cases},
+			M_{A}(G) =
+			\begin{pNiceMatrix}[first-row,first-col]
+				  	  & v_{1} & v_{2} & v_{3}\\
+				v_{1} &   0   &   0   &   2  \\
+				v_{2} &   0   &   2   &   1  \\
+				v_{3} &   2   &   1   &   0 
+			\end{pNiceMatrix}
+		\end{align*}
+	\end{enumerate}
+\end{definition}
+\begin{figure}[H]
+	\centering
+	\begin{tikzpicture}
+		\GraphInit[vstyle=Dijkstra]
+		\SetGraphUnit{3}
+		\Vertex[Math,L=v_{1},LabelOut]{a}
+		\NOWE[Math,L=v_{3},LabelOut](a){c}
+		\SOWE[Math, L=v_{2},LabelOut](c){b}
+		\AddVertexColor{teal}{a, b, c}
+		\Edge[label=$e_{1}$, style={bend right}](a)(c)
+		\Edge[label=$e_{2}$, style={bend right}](c)(a)
+		\Edge[label=$e_{3}$](b)(c)
+		\Loop[label=$e_{4}$, dist=1.5cm,labelstyle={fill = white}](b)
+	\end{tikzpicture}
+	\caption{Gráfica de la definición \ref{def: representacion_matricial}}
+	\label{fig: rep_mat}
+\end{figure}
+\begin{theorem}[Caracterización de las representanciones matriciales]
+	Sea $G$ una gráfica.
+	\begin{enumerate}
+		\item Matriz de incidencia\\
+		La matriz de incidiencia $ M_{I}(G) =\pa{m_{ij}}$ de $G$ cumple que:
+		\begin{itemize}
+			\item $\forall i, j, m_{ij}\in\set{0, 1, 2}$
+			\item $\ds\forall j, \sum_{i}a_{ij} = 2$
+		\end{itemize}
+		Recíprocamente, si una matriz $A$ cumple los dos puntos anteriores, entonces existe una gráfica $G$ tal que $A = M_{I}(G)$.
+		\item Matriz de adyacencia\\
+		La matriz de adyacencia $ M_{A}(G) =\pa{m_{ij}}$ de $G$ cumple que:
+		\begin{itemize}
+			\item $M_{A}(G)\in\mmatrix{nn}{\nmath}$
+			\item $\forall i, 2\mid m_{ii}$
+			\item $M_{A}(G)$ es simétrica.
+		\end{itemize}
+		Recíprocamente, si una matriz $A$ cumple los tres puntos anteriores, entonces existe una gráfica $G$ tal que $A = M_{A}(G)$.
+	\end{enumerate}
+\end{theorem}
+\begin{theorem}
+	Sea $G$ una gráfica, entonces:
+	\begin{itemize}
+		\item Si $M_{I}(G) =\pa{m_{ij}}$ es su matriz de incidencia, entonces:
+		\[ \mdeg{v_{i}}[G] =\sum_{j}m_{ij} \]
+		\item Si $M_{A}(G) =\pa{m_{ij}}$ es su matriz de adyacencia, entonces:
+		\[ \mdeg{v_{i}}[G] =\sum_{j}m_{ij} =\sum_{j}m_{ji} \]
+		\item Para ambas matrices se cumple que:
+		\[ 2e(G) =\sum_{i, j}m_{ij} \]
+	\end{itemize}
+\end{theorem}
+\begin{theorem}
+	Sea $G$ una gráfica y $M_{A}(G) =\pa{m_{ij}}$ su matriz de adyacencia. $G$ es simple si y solo si para cada $i, j$, $0\leq m_{ij}\leq 1$.
+\end{theorem}
+\begin{definition}[Gráfica bipartita]
+	Sea $G$ una gráfica. $G$ se denomina \emph{bipartita} si existe una bipartición $\Omega =\set{\omega_{1},\omega_{2}}$ de $V(G)$ tal que para cada $e\in E(G)$ esta tiene un extremo en $\omega_{1}$ y otro en $\omega_{2}$.
+\end{definition}
+\begin{figure}[H]
+	\centering
+	\begin{tikzpicture}
+		\GraphInit[vstyle=Simple]
+		\SetGraphUnit{2}
+		\Vertex{a}
+		\WE(a){b}\WE(b){c}\WE(c){d}
+		\SO(a){e}\SO(b){f}\SO(c){g}\SO(d){h}
+		\Edges(a, e, b, g, d, h)
+		\Edge(b)(f)
+		\Edge(c)(g)
+		\AddVertexColor{teal}{a, b, c, d}
+		\AddVertexColor{purple}{e, f, g, h}
+		\node (w1) [left=of d] {\large\textcolor{teal}{$\omega_{1}$}};
+		\node (w2) [left=of h] {\large\textcolor{purple}{$\omega_{2}$}};
+	\end{tikzpicture}
+\end{figure}
+\begin{definition}[Gráfica bipartita completa]
+	Sean $n, m\in\nmath$. La gráfica $K_{nm}$ bipartita con bipartición $\Omega =\set{\omega_{1},\omega_{2}}$ tal que $\abs{\omega_{1}} = n$ y $\abs{\omega_{2}} = m$ tal que cada vértice en $\omega_{1}$ es adyacente a cada vértice en $\omega_{2}$ o viceversa se denomina \emph{bipartita completa}.
+\end{definition}
+\begin{figure}[H]
+	\centering
+	\begin{tikzpicture}
+		\GraphInit[vstyle=Simple]
+		\SetGraphUnit{2}
+		\Vertex{a}
+		\SOEA(a){b}\NOEA(b){c}\SOEA(c){d}\NOEA(d){e}
+		\Edges(a, b, c, d, e, b)
+		\Edge(a)(d)
+		\AddVertexColor{teal}{a, c, e}
+		\AddVertexColor{purple}{b, d}
+	\end{tikzpicture}
+\end{figure}
+\begin{definition}[Trayectoria]
+	Sea $G$ una gráfica. Una \emph{trayectoria} en $G$ es una sucesión de vértices y aristas tal que:
+	\[ T =\set{v_{0}, e_{0}, v_{1},\dotsc, v_{n - 1}, e_{n - 1}, v_{n}} \]
+	con $\varphi\pa{e_{i}} =\set{v_{i}, v_{i + 1}}$. La \emph{longitud} de la trayectoria, denotada por $\mleng{T}$, es el número de aristas en la sucesión.
+\end{definition}
+\begin{figure}[H]
+	\centering
+	\begin{tikzpicture}
+		\GraphInit[vstyle=Simple]
+		\Vertex{a}
+		\NOEA(a){b}\SOEA(a){c}\NOWE(a){d}\SOWE(a){e}
+		\AddVertexColor{teal}{a, b, c, d, e}
+		\foreach \ver in {b, c, d, e}{\Edge(a)(\ver)}
+		\SetUpEdge[style={-latex, ultra thick}, color=purple]
+		\Edges(d, b, c, e)
+		\Loop[color=purple,style={latex-, ultra thick},dir=NOEA,dist=1cm](b)
+	\end{tikzpicture}
+\end{figure}
+\begin{definition}[Tipos de trayectorias y concatenación]
+	Sea $G$ una gráfica y $T =\set{v_{0}, e_{0},\dotsc, e_{n - 1}, v_{n}}, S =\set{w_{0}, f_{0},\dotsc, f_{m - 1}, w_{m}}$ trayectorias en $G$.
+	\begin{itemize}
+		\item $T$ es \emph{cerrada} si $v_{0} = v_{n}$.
+		\item $T$ es un \emph{camino} si para cada $i, j$, si $i\neq j$, entonces $e_{i}\neq e_{j}$.
+		\item $\minv{T}$ se denomina \emph{trayectoria inversa} de $T$ y se define como:
+		\[ \minv{T}\coloneqq\set{v_{n}, e_{n - 1},\dotsc, e_{0}, v_{0}} \]
+		\item Si $v_{n} = w_{0}$, entonces $T\smallfrown S$, denominado \emph{$T$ concatenado con $S$}, se define como:
+		\[ T\smallfrown S\coloneqq\set{v_{0}, e_{0},\dotsc, v_{n} = w_{0}, f_{0},\dotsc, w_{m}} \]
+	\end{itemize}
+\end{definition}
+\begin{definition}[Conexidad]
+	Sea $G$ una gráfica y $u, v\in V(G)$. $u, v$ se dicen \emph{conectados} si existe una trayectoria tal que $T =\set{u,\dotsc, v}$. $G$ se dice \emph{conexa} si cada par de vértices están conectados. Si $G$ no es conexa, se dice \emph{disconexa}
+\end{definition}
+\begin{definition}[Subgráfica]
+	Sean $G = (V, E,\varphi), H = (V', E',\varphi')$ gráficas. $H$ se dice \emph{subgráfica} de $G$ si y solo si $V'\subseteq V$, $E'\subseteq E$ y para cada $e\in E'$, $\varphi'(e) =\varphi(e)$, y se denota por $H\leq G$.
+\end{definition}
+\begin{figure}[H]
+	\centering
+	\begin{tikzpicture}
+		\GraphInit[vstyle=Simple]
+		\Vertex{a}
+		\NOEA(a){b}\EA(b){c}\SOEA(c){d}
+		\SO(a){e}\SO(d){f}\SOEA(e){g}
+		\AddVertexColor{purple}{a, b, c, d, e, f}
+		\AddVertexColor{teal}{g}
+		\SetUpEdge[color=teal]
+		\Edges[style={bend left}](a, b, a)
+		\Edges(e, g, f)
+		\SetUpEdge[color=purple, style={ultra thick}]
+		\Edges(a, b, c, d)
+		\Edge(e)(f)
+		\Loop[dist=1cm, dir=SOEA, color=purple, style={ultra thick}](d)
+		\node (G) [right=of g] {\Large\textcolor{teal}{$G$}};
+		\node (H) [right=of d] {\Large\textcolor{purple}{$H$}};
+	\end{tikzpicture}
+\end{figure}
+\begin{definition}[Subgráfica inducida y generadora]
+	Sean $G = (V, E,\varphi), H = (V', E',\varphi')$ gráficas con $H\leq G$.
+	\begin{enumerate}
+		\item Si $V = V'$, entonces $H$ se denomina \emph{subgráfica generadora} de $G$.
+		\item Si cada $e\in E$ con extremos en $V'$ pertenece en $E'$, entonces $H$ se denomina \emph{subgráfica inducida} por $V'$.
+		\item Sea $W\subseteq V$, entonces la subgráfica inducida por $W$ se denota por $G\bracket{W}$.
+	\end{enumerate}
+\end{definition}
+\begin{theorem}[Caracterización de las subgráficas generadora e inducida]
+	Sea $G$ una gráfica y $H\leq G$.
+	\begin{enumerate}
+		\item $H$ es generadora si y solo si existe $X\subseteq E(G)$ tal que $G - X = H$.
+		\item $H$ es inducida si y solo si existe $Y\subseteq V(G)$ tal que $G - Y = H$.
+	\end{enumerate}
+\end{theorem}
+\begin{definition}[Relación de conexidad]
+	Sea $G$ una gráfica. La relación $\sim\subseteq V(G)$ definida como:
+	\[ u\sim v\iff u\text{ está conectado con }v \]
+	es de equivalencia.\par 
+	Sea $v\in V(G)$, entonces definimos a la \emph{componente} de $v$ como:
+	\[ C(v)\coloneqq\bracket{v} =\set{u\in V(G): u\sim v} \]
+	Además, definimos al \emph{número de componentes} de $G$ como:
+	\[ c(G)\coloneqq\abs{V(G) / \sim} =\abs{\set{C(v): v\in V(G)}} \]
+\end{definition}
+\begin{theorem}
+	Sea $G$ una gráfica. $G$ es conexa si y solo si $c(G) = 1$.
+\end{theorem}
+\begin{definition}[Componente conexa]
+	Sea $G$ una gráfica y $v\in V(G)$. La \emph{componente conexa} de $G$ dado $v$ es la subgráfica inducida $G\bracket{C(v)}$.
+\end{definition}
+\begin{figure}[H]
+	\centering
+	\begin{tikzpicture}[scale=0.5]
+		\GraphInit[vstyle=Simple]
+		\draw[ultra thick] (0, 0) circle (7) ;
+		\draw[ultra thick] (0, 0) -- (-6.10061,-3.52219);
+		\draw[ultra thick] (0, 0) -- (6.10061,-3.52219);
+		\draw[ultra thick] (0, 0) -- (0, 7);
+		\Vertex[x=2,y=5]{a}\Vertex[x=2,y=0]{b}\Vertex[x=5,y=2]{c}
+		\Vertex[x=-6,y=0]{e}\Vertex[x=-4,y=5]{d}\Vertex[x=-3,y=0]{f}\Vertex[x=-6,y=-2]{g}\Vertex[x=-2,y=2]{h}
+		\Vertex[x=-3,y=-3]{i}\Vertex[x=2,y=-2]{j}\Vertex[x=0,y=-1]{k}\Vertex[x=2,y=-4]{l}\Vertex[x=0,y=-5]{m}
+		\AddVertexColor{teal}{a, b, c}
+		\AddVertexColor{purple}{d, e, f, g, h}
+		\AddVertexColor{lime!50!black}{i, j, k, l, m}
+		\SetUpEdge[style={ultra thick},color=lime!50!black]
+		\Edges(a, b, c, a)
+		\Loop[dir=NOWE,color=lime!50!black, style={ultra thick}, dist=2cm](a)
+		\SetUpEdge[style={ultra thick},color=teal]
+		\foreach \ver in {e, f, g, h}{\Edge(d)(\ver)}
+		\Edges(e, f, g, h, d, e, f)
+		\SetUpEdge[style={ultra thick}, color=purple]
+		\foreach \ver in {i, k, l, m}{\Edge(j)(\ver)}
+		\Edges(i, j, k, l, m, i, k)
+		\Loop[dir=SO,color=purple, style={ultra thick}, dist=2cm](m)
+	\end{tikzpicture}
+\end{figure}
+\begin{definition}[Circuitos y ciclos]
+	Sea $G$ una gráfica y $T$ una trayectoria de $G$.
+	\begin{enumerate}
+		\item $T$ se denomina \emph{circuito} si $T$ es cerrada.
+		\item $T$ se denomina \emph{ciclo} si es cerrada y para cada $i, j$, si $\set{i, j}\neq\set{0, \mleng{T}}$, entonces $v_{i}\neq v_{j}$. Si $G$ admite al menos un ciclo, se dice que es \emph{cíclica}. Si $G$ no es cíclica, se denomina \emph{acíclica}.
+	\end{enumerate}
+\end{definition}
+\begin{figure}[H]
+	\centering
+	\begin{tikzpicture}
+		\GraphInit[vstyle=Simple]
+		\SetVertexSimple[FillColor=teal]
+		\Vertices[dir=\SOEA]{line}{a, b, c}
+		\Vertices[dir=\SOWE]{line}{a, d, e}
+		\coordinate (f) at ($(c)!0.5!(e)$);
+		\Vertex[Node]{f}
+		\Edges(f, b, c, f, e, d, f)
+		\SetUpEdge[color=teal, style={-latex, ultra thick}]
+		\Edges(a, b, f, d, a)
+	\end{tikzpicture}
+	\begin{tikzpicture}
+		\GraphInit[vstyle=Simple]
+		\SetVertexSimple[FillColor=teal]
+		\Vertices[dir=\SOEA]{line}{a, b, c}
+		\Vertices[dir=\SOWE]{line}{a, d, e}
+		\coordinate (f) at ($(c)!0.5!(e)$);
+		\Vertex[Node]{f}
+		\Edges(a, b, f, d, a)
+		\SetUpEdge[color=purple, style={-latex, ultra thick}]
+		\Edges(f, b, c, f, e, d, f)
+	\end{tikzpicture}
+\end{figure}
+\begin{theorem}
+	Sea $G$ una gráfica tal que $\delta(G)\geq 2$, entonces $G$ tiene al menos un ciclo.
+\end{theorem}
+\begin{coll}
+	Sea $G$ una gráfica $2$-regular simple, entonces cada componente conexa de $G$ es isomorfa a $C_{k}$ para algún $k\in\nmath$.
+\end{coll}
+\begin{coll}
+	Sea $G$ una gráfica. Si $G$ es acíclica, entonces $\delta(G)\leq 1$
+\end{coll}
+\begin{theorem}
+	Sea $G$ una gráfica. $G$ es bipartita si y solo si no admite ciclos impares.
+\end{theorem}
+\begin{definition}[Distancia entre vértices]
+	Sea $G$ una gráfica. La función $\operatorname{d}:V(G)^{2}\to\nmath$ definida por:
+	\[ 
+		\mdis{u, v} =
+		\begin{cases}
+			\mmin[1]{\set{\mleng{T}: T\text{ es un camino de $u$ a }v}}, & u, v\text{ están conectados}\\
+			\infty, &\text{ en caso contrario} 
+		\end{cases}
+	\]
+	se denomina \emph{distancia} y $\mdis{u, v}$ se denomina \emph{distancia entre $u$ y $v$}.
+\end{definition}
+\begin{theorem}
+	Sea $G$ una gráfica y $\operatorname{d}: V(G)^{2}\to\nmath$ la función distancia, entonces $\operatorname{d}$ es una métrica, es decir:
+	\begin{enumerate}
+		\item $\forall u, v\in V(G), \mdis{u, v} = 0\iff u = v$
+		\item $\forall u, v\in V(G), \mdis{u, v} =\mdis{v, u}$
+		\item $\forall u, v, w\in V(G), \mdis{u, v}\leq\mdis{u, w} +\mdis{w, v}$
+	\end{enumerate}
+\end{theorem}
+\begin{definition}[Arista de corte]
+	Sea $G$ una gráfica y $e\in E(G)$. $e$ se denomina \emph{de corte} si:
+	\[ c(G) < c(G - e) \]
+\end{definition}
+\begin{figure}[H]
+	\centering
+	\begin{tikzpicture}
+		\GraphInit[vstyle=Simple]
+		\SetVertexSimple[FillColor=teal]
+		\Vertex{a}
+		{\SetGraphUnit{3}\WE(a){b}}
+		\NOWE(b){c}\SOWE(b){d}\NOEA(a){e}\SOEA(a){f}
+		\Edges(c, b, d, c)
+		\Edges(a, e, f, a)
+		\Edge[labelstyle={fill = white},label={\Large$e$}, style={dashed, ultra thick}](a)(b)
+	\end{tikzpicture}
+\end{figure}
+\begin{definition}[Árboles y bosques]
+	Sea $G$ una gráfica. $G$ se denomina \emph{bosque} si es acíclica y cada componente conexa de $G$ se denomina \emph{árbol}. En particular, si $G$ también es conexa, entonces $G$ se denomina \emph{árbol}.\par 
+	Cada vértice de grado $1$ se denomina \emph{hoja}.
+\end{definition}
+\begin{figure}[H]
+	\centering
+	\begin{tikzpicture}
+		\GraphInit[vstyle=Simple]
+		\SetVertexSimple[FillColor=teal]
+		\Vertex{a}
+		\WE(a){b}\NOWE(b){c}\SOWE(b){d}\NOEA(a){e}\SOEA(a){f}
+		\EA(e){g}\SOEA(g){h}
+		\Edges(c, b, d)
+		\Edges(b, a, e, g, h)
+		\Edge(a)(f)
+	\end{tikzpicture}
+\end{figure}
+\begin{definition}[Árbol generador]
+	Sea $G$ una gráfica y $T\leq G$. $T$ se dice \emph{árbol generador } de $G$ si es un árbol y es una subgráfica generadora.
+\end{definition}
+\begin{theorem}
+	Sea $G$ una gráfica. $G$ es conexa si y solo si admite un árbol generador.
+\end{theorem}
+\begin{theorem}[Caracterización de los árboles]
+	Sea $G$ una gráfica conexa. $G$ es un árbol si y solo si:
+	\begin{enumerate}
+		\item para cada par de vértices existe un único camino que los conecta.
+		\item todas sus aristas son de corte.
+	\end{enumerate}
+\end{theorem}
+\begin{theorem}
+	Sea $T$ un árbol. Si $V(T)\geq 2$, entonces existen al menos dos vértices de grado $1$.
+\end{theorem}
+\begin{theorem}
+	Sea $G$ una gráfica, entonces $v(G)\leq e(G) + c(G)$.
+\end{theorem}
+\begin{coll}
+	Sea $G$ una gráfica conexa, entonces $v(G)\leq e(G) + 1$.
+\end{coll}
+\begin{coll}
+	Sea $G$ una gráfica conexa. $G$ es un árbol si y solo si $e(G) = v(G) - 1$
+\end{coll}
+\begin{definition}[Vértice de corte]
+	Sea $G$ una gráfica y $v\in V(G)$. $v$ se denomina \emph{de corte} si existe una bipartición $\Omega =\set{\omega_{1},\omega_{2}}$ de $E(G)$ tal que $G\bracket{\omega_{1}}\cap G\bracket{\omega_{2}} =\set{v}$.
+\end{definition}
+\begin{theorem}
+	Sea $G$ una gráfica y $v\in V(G)$.
+	\begin{enumerate}
+		\item Si $v$ tiene algún bucle, entonces $v$ es de corte.
+		\item Si $v$ no tiene bucles, $v$ es de corte si y solo si $c(G) < c(G - v)$.
+	\end{enumerate}
+\end{theorem}
+\begin{theorem}
+	Sea $T$ un árbol y $v\in V(T)$. $v$ es de corte si y solo si $\mdeg{v}[T] > 1$.
+\end{theorem}
+\begin{coll}
+	Sea $G$ una gráfica sin bucles con $v(G) > 1$, entonces $G$ tiene al menos dos vértices no de corte.
+\end{coll}
+\subsection{Conectividad}
+\begin{definition}[Conjunto de corte por vértices]
+	Sea $G$ una gráfica y $S\subseteq V(G)$. $S$ se denomina \emph{conjunto de corte por vértices} si $G - S$ es disconexa. 
+\end{definition}
+\begin{definition}[Conexidad]
+	Sea $G$ una gráfica. $G$ se denomina \emph{$k$-conexa} para algún $k\in\nmath$ si para cualquier $S\subseteq V(G)$ de corte, $k\leq\abs{S}$.
+\end{definition}
+\begin{definition}[Conectividad]
+	Sea $G$ una gráfica. La \emph{conectividad} de $G$, denotada por $\kappa(G)$, se define por:
+	\[ \kappa(G)\coloneqq\mmin[1]{\set{\abs{S}: S\subseteq V(G)\text{ es de corte}}} =\mmax[1]{\set{k\in\nmath: G\text{ es $k$-conexa}}} \]
+\end{definition}

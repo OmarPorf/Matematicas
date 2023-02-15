@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.12) (preloaded format=pdflatex 2023.1.27)  15 FEB 2023 14:15
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.12) (preloaded format=pdflatex 2023.1.27)  15 FEB 2023 15:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1404,18 +1404,18 @@ most likely cause issues with the appearance of inserted todonotes. The issue c
 an be solved by adding a line like \setlength {\marginparwidth }{2cm} prior to 
 loading the todonotes package. on input line 2.
 
-<Images/Escudos/ESCUDO_ESFM.png, id=46, 129.1224pt x 166.9437pt>
+<Images/Escudos/ESCUDO_ESFM.png, id=42, 129.1224pt x 166.9437pt>
 File: Images/Escudos/ESCUDO_ESFM.png Graphic file (type png)
 <use Images/Escudos/ESCUDO_ESFM.png>
 Package pdftex.def Info: Images/Escudos/ESCUDO_ESFM.png  used on input line 16.
 
 (pdftex.def)             Requested size: 62.59596pt x 80.92937pt.
-<Images/Escudos/ipn2.png, id=48, 1606.0pt x 1140.26pt>
+<Images/Escudos/ipn2.png, id=44, 1606.0pt x 1140.26pt>
 File: Images/Escudos/ipn2.png Graphic file (type png)
 <use Images/Escudos/ipn2.png>
 Package pdftex.def Info: Images/Escudos/ipn2.png  used on input line 16.
 (pdftex.def)             Requested size: 113.81102pt x 80.80069pt.
-<Images/Escudos/Pensamientof.pdf, id=49, 1445.4pt x 813.0375pt>
+<Images/Escudos/Pensamientof.pdf, id=45, 1445.4pt x 813.0375pt>
 File: Images/Escudos/Pensamientof.pdf Graphic file (type pdf)
 <use Images/Escudos/Pensamientof.pdf>
 Package pdftex.def Info: Images/Escudos/Pensamientof.pdf  used on input line 27
@@ -1451,47 +1451,37 @@ File: ts1cmss.fd 2022/07/10 v2.5l Standard LaTeX font definitions
 LaTeX Info: Redefining \. on input line 23.
 LaTeX Info: Redefining \% on input line 23.
 )
-
-Package rerunfilecheck Warning: File `main.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: 102B7264F5F1892BA9D7815F05B054E6;1229
-(rerunfilecheck)             After:  EB8353651564C4F74628D69FADF3D783;1080.
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: EB8353651564C4F74628D69FADF3D783;1080.
  ) 
 Here is how much of TeX's memory you used:
- 36416 strings out of 476404
- 778126 string characters out of 2789052
+ 36275 strings out of 476404
+ 775296 string characters out of 2789052
  1905324 words of memory out of 3000000
- 56136 multiletter control sequences out of 15000+600000
+ 55996 multiletter control sequences out of 15000+600000
  517619 words of font info for 54 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  97i,13n,96p,566b,725s stack positions out of 10000i,1000n,20000p,200000b,80000s
-
-pdfTeX warning (dest): name{subsection.1.4} has been referenced but does not ex
-ist, replaced by a fixed one
-
- <C:\Users\JASIEL\AppData\Local\MiKTeX\fonts/pk/ljfour/public/esint/dpi600\esin
-t10.pk> <C:\Users\JASIEL\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi60
-0\tcss1000.pk><C:/Users/JASIEL/AppData/Local/Programs/MiKTeX/fonts/type1/public
-/amsfonts/cm/cmex10.pfb><C:/Users/JASIEL/AppData/Local/Programs/MiKTeX/fonts/ty
-pe1/public/amsfonts/cm/cmmi10.pfb><C:/Users/JASIEL/AppData/Local/Programs/MiKTe
-X/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/JASIEL/AppData/Local/Progr
-ams/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/JASIEL/AppData/Lo
-cal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/JASIEL/A
-ppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/
-JASIEL/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss10.pfb>
-<C:/Users/JASIEL/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/c
-mss12.pfb><C:/Users/JASIEL/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
-fonts/cm/cmss17.pfb><C:/Users/JASIEL/AppData/Local/Programs/MiKTeX/fonts/type1/
-public/amsfonts/cm/cmssbx10.pfb><C:/Users/JASIEL/AppData/Local/Programs/MiKTeX/
-fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/JASIEL/AppData/Local/Progra
-ms/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/JASIEL/AppData/Loc
-al/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (6 pages, 536323 bytes).
+ <C:\Users\JASIEL\AppData\Local\MiKTeX\fonts/pk/ljfour/public/esint/dpi600\es
+int10.pk> <C:\Users\JASIEL\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi
+600\tcss1000.pk><C:/Users/JASIEL/AppData/Local/Programs/MiKTeX/fonts/type1/publ
+ic/amsfonts/cm/cmex10.pfb><C:/Users/JASIEL/AppData/Local/Programs/MiKTeX/fonts/
+type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/JASIEL/AppData/Local/Programs/MiK
+TeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/JASIEL/AppData/Local/Pro
+grams/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/JASIEL/AppData/
+Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/JASIEL
+/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/User
+s/JASIEL/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss10.pf
+b><C:/Users/JASIEL/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm
+/cmss12.pfb><C:/Users/JASIEL/AppData/Local/Programs/MiKTeX/fonts/type1/public/a
+msfonts/cm/cmss17.pfb><C:/Users/JASIEL/AppData/Local/Programs/MiKTeX/fonts/type
+1/public/amsfonts/cm/cmssbx10.pfb><C:/Users/JASIEL/AppData/Local/Programs/MiKTe
+X/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/JASIEL/AppData/Local/Prog
+rams/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/JASIEL/AppData/L
+ocal/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on main.pdf (6 pages, 535930 bytes).
 PDF statistics:
- 160 PDF objects out of 1000 (max. 8388607)
- 16 named destinations out of 1000 (max. 500000)
- 108 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 156 PDF objects out of 1000 (max. 8388607)
+ 15 named destinations out of 1000 (max. 500000)
+ 100 words of extra memory for PDF output out of 10000 (max. 10000000)
 

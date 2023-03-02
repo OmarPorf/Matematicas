@@ -1,0 +1,234 @@
+\input{Preambulo.tex}
+\begin{document}
+    \frame{\titlepage}
+	\begin{frame}
+		\frametitle{Contenido}
+		\tableofcontents
+	\end{frame}
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \section{Introducción}
+    \begin{frame}{Matrices}
+        Las \emph{matrices} en matemáticas son importantes dado que nos ayudan a representar de forma sintética ciertos conceptos o entidades matemáticas. 
+    \end{frame}
+    \begin{frame}{Matriz}
+        \begin{mdefinition}[Matriz]
+            Sea $A$ un conjunto (generalmente $ \rmath $) y sean $ a_{11},\dotsc, a_{1m}, a_{21}\dotsc, a_{2m},\dotsc, a_{nm}\in A $ con $ n, m\in\nmath $. Definimos a una \emph{matriz} $ M $ de tamaño $ n\times m $ sobre el conjunto $ A $ como:
+            \[ M\coloneqq 
+	            \begin{bNiceMatrix}
+		            a_{11} & \Cdots & a_{1m}\\
+		            a_{21} & \Cdots & a_{2m}\\
+		            \Vdots & \Ddots & \Vdots\\
+		            a_{n1} & \Cdots & a_{nm}
+	            \end{bNiceMatrix}
+            \]
+            Donde a $n$ se le denomina \emph{número de filas} y a $m$ \emph{número de columnas}. Dado $a_{ij}$, $i$ se denomina \emph{$i$-ésima fila} y $j$ \emph{$j$-ésima columna}.
+        \end{mdefinition}
+    \end{frame}
+    \begin{frame}{Espacio de matrices}
+        \begin{mdefinition}[Espacio de matrices]
+            Sea $A$ un conjunto y $n, m\in\nmath$. Definimos al \emph{espacio de matrices} de tamaño $n\times m$ sobre $A$ como:
+            \[\mmatrix{A}{n, m}\coloneqq\set{M: M\text{ es una matriz de $n\times m$ sobre }A}\]
+            A una matriz $M\in\mmatrix{A}{n,m}$, generalmente se le denota $M =\pa{m_{ij}}$, donde $m_{ij}$ se denomina \emph{coeficiente o componente general} de $M$.
+        \end{mdefinition}
+    \end{frame}
+    \begin{frame}{}
+        \begin{remark}
+            Al espacio $\mmatrix{\rmath}{n, m}$ se le denomina \emph{espacio de matrices reales}.\par 
+            A partir de ahora, solo trabajaremos con este tipo de matrices.
+        \end{remark}
+    \end{frame}
+    \begin{frame}{Algunos tipos de matrices}
+        \begin{mdefinition}
+            Sea $A\in\mmatrix{\rmath}{n, m}$.\par
+            \only{
+                $A$ se denomina \emph{vector columna} si $m = 1$, es decir, $A$ se ve de la siguiente forma:
+                \[
+                    A =
+                    \begin{bNiceMatrix}
+                        a_{11}\\
+                        \Vdots\\
+                        a_{n1}
+                    \end{bNiceMatrix}
+                \]
+            }<1>
+            \only{
+                $A$ se denomina \emph{vector fila} si $n = 1$, es decir, $A$ se ve de la siguiente forma:
+                \[
+                    A =
+                    \begin{bNiceMatrix}
+                        a_{11} & \Cdots & a_{1m}
+                    \end{bNiceMatrix}
+                \]
+            }<2>
+            \only{
+                $A$ se denomina \emph{cuadrada} si $m = n$, es decir, $A$ se ve de la siguiente forma:
+                \[
+                    A =
+                    \begin{bNiceMatrix}
+                        a_{11} & \Cdots & a_{1n}\\
+                        \Vdots & \Ddots & \Vdots\\
+                        a_{n1} & \Cdots & a_{nn}
+                    \end{bNiceMatrix}
+                \]
+            }<3>
+            \only{
+                $A$ se denomina \emph{matriz cero} si para cada $i,j$, $a_{ij} = 0$, es decir, $A$ se ve de la siguiente forma:
+                \[
+                    A =
+                    \begin{bNiceMatrix}
+                        0 & \Cdots^{m\text{ veces}} & 0\\
+                        \Vdots & \Ddots & \Vdots_{n\text{ veces}}\\
+                        0 & \Cdots & 0
+                    \end{bNiceMatrix}
+                \]
+                Si $A$ es matriz cero, se denota por $\hat{0}_{nm}$ o simplemente $\hat{0}$.
+            }<4>
+            \only{
+                $A$ se denomina \emph{triangular superior} si para cada $i > j$, $a_{ij} = 0$, es decir, $A$ se ve de la siguiente forma:
+                \[
+                    A =
+                    \begin{bNiceMatrix}
+                        a_{11} & \Cdots & & a_{1n}\\
+                        0 & \Ddots & & \Vdots\\
+                        \Vdots & \Ddots &  &\\
+                        0 & \Cdots & 0 & a_{nm}
+                    \end{bNiceMatrix}
+                \]
+            }<5>
+            \only{
+                $A$ se denomina \emph{triangular inferior} si para cada $i < j$, $a_{ij} = 0$, es decir, $A$ se ve de la siguiente forma:
+                \[
+                    A =
+                    \begin{bNiceMatrix}
+                        a_{11} & 0 & \Cdots & 0\\
+                         & \Ddots & \Ddots & \Vdots\\
+                        \Vdots & & & 0\\
+                        a_{n1} & \Cdots & & a_{nm}
+                    \end{bNiceMatrix}
+                \]
+            }<6>
+            \only{
+                $A$ se denomina \emph{diagonal} si es triangular superior e inferior, es decir, $A$ se ve de la siguiente forma:
+                \[
+                    A =
+                    \begin{bNiceMatrix}
+                        a_{11} & 0 & \Cdots & 0\\
+                        0 & \Ddots & \Ddots & \Vdots\\
+                        \Vdots & \Ddots & & 0\\
+                        0 & \Cdots & 0 & a_{nm}
+                    \end{bNiceMatrix}
+                \]
+            }<7>
+        \end{mdefinition}
+    \end{frame}
+    \begin{frame}{}
+        \begin{remark}
+            Si tenemos una matriz $A\in\mmatrix{\rmath}{n,m}$ tal que:
+            \[A =
+                \begin{bNiceMatrix}
+                    a_{11} & \Cdots & a_{1m}\\
+                    \Vdots & \Ddots & \Vdots\\
+                    a_{n1} & \Cdots & a_{nm}
+                \end{bNiceMatrix}
+            \]
+            \only{
+                Entonces para indicar que solo nos interesa saber las filas, lo denotamos por:
+                \[A =
+                    \begin{bNiceMatrix}
+                        \hat{a}_{1}\\
+                        \Vdots\\
+                        \hat{a}_{n}
+                    \end{bNiceMatrix}
+                \]
+                donde cada $\hat{a}_{i} =\begin{bNiceMatrix}
+                a_{i1} & \Cdots & a_{im}
+                \end{bNiceMatrix}$ es un vector fila.
+            }<1>
+            \only{
+                Entonces para indicar que solo nos interesa saber las columnas, lo denotamos por:
+                \[A =
+                    \begin{bNiceMatrix}
+                        \hat{a}_{1} & \Cdots & \hat{a}_{n}
+                    \end{bNiceMatrix}
+                \]
+                donde cada $\hat{a}_{j} =\begin{bNiceMatrix}
+                a_{1j}\\ \Vdots\\ a_{nj}
+                \end{bNiceMatrix}$ es un vector columna.
+            }<2>
+        \end{remark}
+    \end{frame}
+    \begin{frame}{Operaciones entre matrices}
+        \begin{mdefinition}[Operaciones entre matrices]
+            \only{
+                Sean $A =\pa{a_{ij}}, B =\pa{b_{ij}}\in\mmatrix{\rmath}{n, m}$. Definimos la \emph{suma} de $A$ y $B$ como:
+                \begin{align*}
+                    A + B &= 
+                    \begin{bNiceMatrix}
+                        a_{11} & \Cdots & a_{1m}\\
+                        \Vdots & \Ddots & \Vdots\\
+                        a_{n1} & \Cdots & a_{nm}
+                    \end{bNiceMatrix}
+                    +
+                    \begin{bNiceMatrix}
+                        b_{11} & \Cdots & b_{1m}\\
+                        \Vdots & \Ddots & \Vdots\\
+                        b_{n1} & \Cdots & b_{nm}
+                    \end{bNiceMatrix}\\
+                    &\coloneqq
+                    \begin{bNiceMatrix}
+                        a_{11} + b_{11} & \Cdots & a_{1m} + b_{1m}\\
+                        \Vdots & \Ddots & \Vdots\\
+                        a_{n1} + b_{n1} & \Cdots & a_{nm} + b_{nm}
+                    \end{bNiceMatrix}
+                    =\pa{a_{ij} + b_{ij}}
+                \end{align*}
+            }<1>
+            \only{
+                Sea $A =\pa{a_{ij}}\in\mmatrix{\rmath}{n, m}$ y $\lambda\in\rmath$. Definimos al \emph{producto por escalar} de $\lambda$ por $A$ como:
+                \begin{align*}
+                    \lambda A &=\lambda 
+                    \begin{bNiceMatrix}
+                        a_{11} & \Cdots & a_{1m}\\
+                        \Vdots & \Ddots & \Vdots\\
+                        a_{n1} & \Cdots & a_{nm}
+                    \end{bNiceMatrix}\\
+                    &\coloneqq
+                    \begin{bNiceMatrix}
+                        \lambda a_{11} & \Cdots & \lambda a_{1m}\\
+                        \Vdots & \Ddots & \Vdots\\
+                        \lambda a_{n1} & \Cdots & \lambda a_{nm}
+                    \end{bNiceMatrix}
+                    =\pa{\lambda a_{ij}}
+                \end{align*}
+            }<2>
+            \only{
+                Sea $A =\pa{a_{ij}}\in\mmatrix{\rmath}{n, m}$. Definimos la \emph{transpuesta} de $A$ como:
+                \begin{align*}
+                    \mtrans{A} &= 
+                    \mtrans{
+                        \begin{bNiceMatrix}
+                        \CodeBefore
+                        \cellcolor{pgay1!50}{1-}
+                        \cellcolor{pgay4!50}{3-}
+                        \Body
+                            a_{11} & \Cdots & a_{1m}\\
+                            \Vdots & \Ddots & \Vdots\\
+                            a_{n1} & \Cdots & a_{nm}
+                        \end{bNiceMatrix}
+                    }\\
+                    &\coloneqq
+                    \begin{bNiceMatrix}
+                        \CodeBefore
+                        \cellcolor{pgay1!50}{-1}
+                        \cellcolor{pgay4!50}{-3}
+                        \Body
+                        a_{11} & \Cdots & a_{1n}\\
+                        \Vdots & \Ddots & \Vdots\\
+                        a_{1m} & \Cdots & a_{nm}
+                    \end{bNiceMatrix}
+                    =\pa{a_{ji}}
+                \end{align*}
+            }<3>
+        \end{mdefinition}
+    \end{frame}
+\end{document}

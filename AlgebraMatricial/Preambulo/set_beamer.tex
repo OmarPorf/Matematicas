@@ -1,0 +1,54 @@
+\setbeamercolor*{palette primary}{bg=pgay3, fg = white}
+\setbeamercolor*{palette secondary}{bg=pgay2, fg = white}
+\setbeamercolor*{palette tertiary}{bg=pgay1, fg = white}
+\setbeamercolor*{titlelike}{fg=pgay1}
+\setbeamercolor*{title}{bg=pgay1, fg = white}
+\setbeamercolor*{item}{fg=pgay1}
+\setbeamercolor*{caption name}{fg=pgay1}
+\usefonttheme{professionalfonts}
+%------------------------------------------------------------
+\titlegraphic{\includegraphics[height=1cm]{images/ESCUDO_ESFM.png}\includegraphics[height=1cm]{images/ipn2.png}}
+
+
+\setbeamerfont{title}{size=\large}
+\setbeamerfont{subtitle}{size=\small}
+\setbeamerfont{author}{size=\small}
+\setbeamerfont{date}{size=\small}
+\setbeamerfont{institute}{size=\small}
+\author{Omar Porfirio García}
+\institute{ESFM}
+\date{\today}
+\setbeamercovered{dynamic}
+%------------------------------------------------------------
+\AtBeginSection[]{
+	\begin{frame}
+		\vfill
+		\centering
+		\begin{beamercolorbox}[sep=8pt,center,shadow=true,rounded=true]{title}
+			\usebeamerfont{title}\insertsectionhead\par%
+		\end{beamercolorbox}
+		\vfill
+	\end{frame}
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Change standard block colors
+
+% 1- Block title (background and text)
+\setbeamercolor{block title}{bg=pgay1, fg=white}
+
+% 2- Block body (background)
+\setbeamercolor{block body}{bg=pgay1!10}
+% Change alert block colors
+
+% 1- Block title (background and text)
+\setbeamercolor{block title alerted}{fg=white, bg=red}
+
+% 2- Block body (background)
+\setbeamercolor{block body alerted}{bg=red!10}
+% Change example block colors
+
+% 1- Block title (background and text)
+\setbeamercolor{block title example}{fg=white, bg=teal}
+
+% 2- Block body (background)
+\setbeamercolor{block body example}{bg=teal!25}

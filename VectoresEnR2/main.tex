@@ -1,0 +1,349 @@
+\input{Preambulo.tex}
+\begin{document}
+    \frame{\titlepage}
+	\begin{frame}
+		\frametitle{Contenido}
+		\tableofcontents
+	\end{frame}
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \section{Vectores en $\rmath[2]$}
+	\begin{frame}{Plano $\rmath[2]$}
+	    \begin{mdefinition}[El plano cartesiano]
+	        Sea $\rmath$ el conjunto de números reales. Definimos a $\rmath[2]$ como:
+	        \[\rmath[2]\coloneqq\rmath\times\rmath=\set{(a,b):a,b\in\rmath}\]
+	        \begin{figure}
+	            \centering\input{images/ejes}
+	        \end{figure}
+	        A cada elemento de $\rmath[2]$ le denominamos \emph{punto} o \emph{vector}. A cada vector lo denotaremos como $\hat{x},\hat{y},\hat{a},\ldots$. A un elemento $a\in\rmath$ le denominaremos \emph{escalar}.
+	    \end{mdefinition}    
+	\end{frame}
+	\section{Operaciones con vectores}
+    \begin{frame}{Operaciones con vectores}
+        \begin{mdefinition}[Operaciones con vectores]
+            Sean $\hat{x}=(a,b),\hat{y}=(c,d)\in\rmath[2]$ vectores y $\alpha\in\rmath$. Entonces definimos:
+            \begin{itemize}
+                \item Suma \[\hat{x}+\hat{y}\coloneqq(a+c,b+d)\]
+                \begin{figure}
+                    \centering\input{images/suma de vectores}
+                \end{figure}
+                \item Producto escalar \[\alpha\hat{x}\coloneqq(\alpha a,\alpha b)\]
+                \begin{figure}
+                    \centering\input{images/Producto escalar}
+                \end{figure}
+            \end{itemize}
+        \end{mdefinition}
+    \end{frame}
+    \begin{frame}
+        \begin{remark}
+        Definimos lo siguiente:
+        \[ \hat{0}\coloneqq(0,0)\]
+        \[-\hat{x}\coloneqq-1\cdot\hat{x}\]
+        \end{remark}
+    \end{frame}
+    \begin{frame}{Ejemplos}
+        \begin{example}
+            Determine el vector resultante de cada operación con vectores donde $\ds\hat{x}=(1,2),\hat{y}=(3,5)$.
+            \begin{itemize}
+                \only{\item $\ds\hat{x}+\hat{y} $}<1>
+                \only{\item $\ds3\hat{x}-\hat{y}$}<2>
+                \only{\item $\ds\hat{y}-\hat{x}$}<3>
+                \only{\item $\ds\dfrac{1}{2}\hat{x}-\dfrac{1}{3}\hat{y}$}<4>
+            \end{itemize}
+        \end{example}
+    \end{frame}
+    \begin{frame}{Ejemplos}
+        \begin{example}
+            Demuestre cada una de las propiedades con vectores.
+            \begin{itemize}
+                \only{\item $\ds\hat{x}+\hat{y}=\hat{y}+\hat{x}$}<1>
+                \only{\item $\ds\pa{\hat{x}+\hat{y}}+\hat{z}=\hat{x}+\pa{\hat{y}+\hat{z}}$}<2>
+                \only{\item $\ds0\cdot\hat{x}= \hat{0}$}<3>
+                \only{\item $\ds\alpha\pa{\beta\hat{x}}=\pa{\alpha\beta}\hat{x}$}<4>
+                \only{\item $\ds\alpha\pa{\hat{x}+\hat{y}}=\alpha\hat{x}+\alpha\hat{y}$}<5>
+                \only{\item $\ds\pa{\alpha+\beta}\hat{x}=\alpha\hat{x}+\beta\hat{x}$}<6>
+            \end{itemize}
+        \end{example}
+    \end{frame}
+    \section{Norma euclideana}
+    \begin{frame}{Norma euclideana}
+        \begin{mdefinition}[Norma euclideana]
+            Sea $\hat{x}=(a,b)\in\rmath[2]$ un vector. Definimos a la \emph{norma} de $\hat{x}$ como:
+            \[\norm{\hat{x}}\coloneqq\sqrt{a^2+b^2}\]
+            \begin{figure}
+                \centering\input{images/norma}
+            \end{figure}
+        \end{mdefinition}
+    \end{frame}
+    \begin{frame}{Ejemplos}
+        \begin{example}
+            Sean $\hat{x}=(1,4),\hat{y}=(2,3)\in\rmath[2]$ vectores. Calcule la norma de cada uno de los siguientes vectores:
+            \begin{itemize}
+                \only{\item $\ds\norm{\hat{x}}$}<1>
+                \only{\item $\ds\norm{\hat{y}-\hat{x}}$}<2>
+                \only{\item $\ds\norm{3\hat{x}+2\hat{y}}$}<3>
+                \only{\item $\ds\norm{4\hat{y}-\hat{x}}$}<4>
+            \end{itemize}
+        \end{example}
+    \end{frame}
+    \begin{frame}{Ejemplos}
+        \begin{example}
+            Demuestre cada una de las siguientes propiedades de la norma euclideana:
+            \begin{itemize}
+                \only{\item $\ds\norm{\hat{x}}\geq0$}<1>
+                \only{\item $\ds\norm{\hat{x}}=0\iff\hat{x}= \hat{0}$}<2>
+                \only{\item $\ds\norm{\alpha\hat{x}}=\abs{\alpha}\norm{\hat{x}}$}<3>
+                \only{\item $\ds\norm{\hat{x}+\hat{y}}\leq\norm{\hat{x}}+\norm{\hat{y}}$}<4>
+            \end{itemize}
+        \end{example}
+    \end{frame}
+    \section{Distancia}
+    \begin{frame}{Distancia entre dos vectores}
+        \begin{mdefinition}[Distancia]
+            Sean $\hat{x},\hat{y}\in\rmath[2]$ vectores. Definimos la distancia entre $\hat{x}$ y $\hat{y}$ como:
+            \[\mdis{\hat{x}, \hat{y}}\coloneqq\norm{\hat{y}-\hat{x}}\]
+            \begin{figure}
+                \centering\input{images/distancia}
+            \end{figure}
+        \end{mdefinition}
+    \end{frame}
+    \begin{frame}{Ejemplos}
+        \begin{example}
+            Calcule la distancia entre cada uno de los siguientes vectores:
+            \begin{itemize}
+                \only{\item $\ds\hat{x}=(2,3),\hat{y}=(4,9)$}<1>
+                \only{\item $\ds\hat{x}=(1,4),\hat{y}=(1,7)$}<2>
+                \only{\item $\ds\hat{x}=(5,7),\hat{y}=(1,7)$}<3>
+                \only{\item $\ds\hat{x}=(3,6),\hat{y}=(7,8)$}<4>
+            \end{itemize}
+        \end{example}
+    \end{frame}
+    \begin{frame}{Ejemplos}
+        \begin{example}
+            Demuestre cada una de las siguientes propiedades de la distancia:
+            \begin{itemize}
+                \only{\item $\ds\mdis{\hat{x}, \hat{y}}=0\iff\hat{x}=\hat{y}$}<1>
+                \only{\item $\ds\mdis{\hat{x}, \hat{y}}=\mdis{\hat{y}, \hat{x}}$}<2>
+                \only{\item $\ds\mdis{\hat{x}, \hat{y}}\leq\mdis{\hat{x}, \hat{z}}+\mdis{\hat{z}, \hat{y}}$}<3>
+                \only{\item $\ds\mdis{\hat{x}, \hat{y}}\geq0$}<4>
+            \end{itemize}
+        \end{example}
+    \end{frame}
+    \section{Vectores posicionados}
+    \begin{frame}{Vectores posicionados}
+        Hasta ahora solo hemos visto vectores que van del origen a un punto del plano. Sin embargo, podemos tener vectores que van de un punto $a\in\rmath[2]$ a un punto $b\in\rmath[2]$. 
+        \begin{mdefinition}[Vector posicionado]
+            Sean $\hat{x},\hat{y}\in\rmath[2]$ vectores. Al vector $\hat{z}$ que va de $\hat{x}$ a $\hat{y}$ le denominamos \emph{vector posicionado}.
+        \end{mdefinition}
+    \end{frame}
+    \begin{frame}{}
+        \begin{figure}
+            \centering\input{images/vector posicionado}
+        \end{figure}
+    \end{frame}
+    \begin{frame}{Ejemplos}
+        \begin{example}
+            Dibuje al vector posicionado que va de $\hat{x}$ a $\hat{y}$.
+            \begin{itemize}
+                \only{\item $\hat{x} = (1, 3), \hat{y} = (2, 6)$}<1>
+                \only{\item $\hat{x} = (4, 1), \hat{y} = (6, 2)$}<2>
+                \only{\item $\hat{x} = (3, 3), \hat{y} = (2, 5)$}<3>
+                \only{\item $\hat{x} = (4, 3), \hat{y} = (2, 1)$}<4>
+            \end{itemize}
+        \end{example}
+    \end{frame}
+    \begin{frame}{Operaciones de vectores posicionados}
+        \begin{mdefinition}[Operaciones de vectores posicionados]
+            Sean $\hat{w},\hat{x},\hat{y},\hat{z}\in\rmath[2]$ vectores y $\hat{u}, \hat{v}$ vectores posicionados que van de $\hat{w}$ a $\hat{x}$ y de $\hat{y}$ a $\hat{z}$ respectivamente.
+            \begin{itemize}
+                \item La suma de $\hat{u}$ y $\hat{v}$ es el vector posicionado que va de $\hat{w}+\hat{y}$ a $\hat{x}+\hat{z}$.
+                \item El producto escalar de $\alpha\in\rmath$ por $\hat{u}$ es el vector posicionado que va de $\alpha\hat{w}$ a $\alpha\hat{x}$.
+            \end{itemize}
+        \end{mdefinition}
+    \end{frame}
+    \begin{frame}{}
+        \begin{figure}
+            \centering\input{images/vectores posicionados operaciones}
+        \end{figure}
+    \end{frame}
+    \begin{frame}{Ejemplos}
+        \begin{example}
+            Calcule cada operación entre los vectores posicionados $\hat{u},\hat{v}$ que van de $(2,4)$ a $(1,3)$ y de $(1,4)$ a $(2,3)$ respectivamente.
+            \begin{itemize}
+                \only{\item $\hat{u}+\hat{v}$}<1>
+                \only{\item $\hat{u}-3\hat{v}$}<2>
+                \only{\item $\hat{v}+2\hat{u}$}<3>
+                \only{\item $2\hat{u}-2\hat{v}$}<4>
+            \end{itemize}
+        \end{example}
+    \end{frame}
+    \section{Vectores equivalentes}
+    \begin{frame}{Equivalencia entre vectores}
+        \begin{mdefinition}[Vectores equivalentes]
+            Sean $\hat{w},\hat{x},\hat{y},\hat{z}\in\rmath[2]$ vectores y $\hat{u}, \hat{v}$ vectores posicionados que van de $\hat{w}$ a $\hat{x}$ y de $\hat{y}$ a $\hat{z}$ respectivamente. Decimos que $\hat{u}$ y $\hat{v}$ son \emph{equivalentes} o \emph{equipolentes} si y solo si se cumple que:
+            \[\hat{x} - \hat{w} = \hat{z} - \hat{y}\]
+            Si es el caso, entonces lo denotamos como $\hat{u}\sim\hat{v}$.
+        \end{mdefinition}
+    \end{frame}
+    \begin{frame}{Ejemplos}
+        \begin{example}
+            Determine si cada par de vectores posicionados son equivalentes.
+            \begin{itemize}
+                \only{\item $\hat{u},\hat{v}$ que van de $(2,4)$ a $(1,3)$ y de $(1,4)$ a $(2,3)$ respectivamente}<1>
+                \only{\item $\hat{u},\hat{v}$ que van de $(3,4)$ a $(5,2)$ y de $(0,0)$ a $(2,-2)$ respectivamente}<2>
+                \only{\item $\hat{u},\hat{v}$ que van de $(7,4)$ a $(2,8)$ y de $(4,4)$ a $(-1,0)$ respectivamente}<3>
+                \only{\item $\hat{u},\hat{v}$ que van de $(1,3)$ a $(5,-2)$ y de $(3,7)$ a $(-1,-4)$ respectivamente}<4>
+            \end{itemize}
+        \end{example}
+    \end{frame}
+    \begin{frame}{Propiedades de los vectores equivalentes}
+        \begin{mtheorem}{Propiedades de los vectores equivalentes}
+            \begin{enumerate}
+                \item Todo vector posicionado es equivalente a sí mismo, es decir, si $\hat{u}$ es un vector posicionado, entonces $\hat{u}\sim\hat{u}$.
+                \item Sean dos vectores $\hat{u},\hat{v}$ posicionados. Si $\hat{u}\sim\hat{v}$, entonces $\hat{v}\sim\hat{u}$.
+                \item Sean $\hat{u},\hat{v},\hat{w}$ vectores posicionados. Si $\hat{u}\sim\hat{v}$ y $\hat{v}\sim\hat{w}$, entonces $\hat{u}\sim\hat{w}$.
+            \end{enumerate}
+        \end{mtheorem}
+    \end{frame}
+    \begin{frame}{Demostración}
+        \begin{proof}
+            \begin{enumerate}
+                \item Sea $\hat{u}$ un vector posicionado que va de $\hat{x}$ a $\hat{y}$, entonces $\hat{y}-\hat{x}=\hat{y}-\hat{x}$. Por lo tanto, $\hat{u}\sim\hat{u}$.
+                \item Sean $\hat{u},\hat{v}$ vectores posicionados que van de $\hat{w}$ a $\hat{x}$ y de $\hat{y}$ a $\hat{z}$. Si $\hat{u}\sim\hat{v}$, entonces $\hat{x}-\hat{w}=\hat{z}-\hat{y}$ pero también $\hat{z}-\hat{y}=\hat{x}-\hat{w}$. Por lo tanto, $\hat{v}\sim\hat{u}$.
+                \item Sean $\hat{u},\hat{v},\hat{w}$ dos vectores posicionados que van de $\hat{x}$ a $\hat{y}$, de $\hat{z}$ a $\hat{a}$ y de $\hat{b}$ a $\hat{c}$. Si $\hat{u}\sim\hat{v}$ y $\hat{v}\sim\hat{w}$, entonces $\hat{y}-\hat{x}=\hat{a}-\hat{z}$ y $\hat{a}-\hat{z}=\hat{c}-\hat{b}$. Luego, se tiene que $\hat{y}-\hat{x}=\hat{c}-\hat{b}$. Por lo tanto, $\hat{u}\sim\hat{w}$.
+            \end{enumerate}
+        \end{proof}
+    \end{frame}
+    \begin{frame}{Clases de vectores}
+        \begin{mdefinition}[Clases de vectores]
+            Sea $\hat{u}$ un vector posicionado. Denominamos al siguiente conjunto como \emph{clase de vectores} de $\hat{u}$:
+            \[\bracket{\hat{u}}\coloneqq\set{\hat{v}:\hat{u}\sim\hat{v}}\]
+        \end{mdefinition}
+    \end{frame}
+    \begin{frame}{Propiedades de las clases de vectores}
+        \begin{mtheorem}{Propiedades de las clases de vectores}
+            Sean $\hat{u},\hat{v}$ vectores posicionados.
+            \begin{enumerate}
+                \item $\bracket{\hat{u}}\neq\void$
+                \item $\hat{v}\in\bracket{\hat{u}}\iff\bracket{\hat{u}}=\bracket{\hat{v}}$
+                \item $\bracket{\hat{u}}\cap\bracket{\hat{v}}=\void\iff\bracket{\hat{u}}\neq\bracket{\hat{v}}$
+            \end{enumerate}
+        \end{mtheorem}
+    \end{frame}
+    \begin{frame}{Demostración}
+        \begin{proof}
+            \only{
+                \begin{enumerate}
+                    \item 
+                    \label{item : clase_no_vacia}
+                    Si $\hat{u}$ es un vector posicionado, entonces $\hat{u}\in\bracket{\hat{u}}$ pues $\hat{u}\sim\hat{u}$. Por lo tanto, $\bracket{\hat{u}}\neq\void$.
+                    \item 
+                    \label{item : clases_iguales}
+                    \begin{itemize}
+                        \item[$\implies)$] Si $\hat{v}\in\bracket{\hat{u}}$, entonces $\hat{u}\sim\hat{v}$. Además, si $\hat{w}\in\bracket{\hat{u}}$ es otro vector posicionado, entonces $\hat{w}\sim\hat{u}$ y luego $\hat{w}\sim\hat{v}$. Por lo tanto, $\hat{w}\in\bracket{\hat{v}}$ y entonces $\bracket{\hat{u}}\subseteq\bracket{\hat{v}}$.\par 
+                        Ahora, si $\hat{w}\in\bracket{\hat{v}}$ es otro vector posicionado, entonces $\hat{w}\sim\hat{v}$ y luego $\hat{w}\sim\hat{u}$. Por lo tanto, $\hat{w}\in\bracket{\hat{u}}$ y entonces $\bracket{\hat{v}}\subseteq\bracket{\hat{u}}$. En conclusión, $\bracket{\hat{u}}=\bracket{\hat{v}}$.
+                        \item[$\impliedby)$] Si $\bracket{\hat{u}}=\bracket{\hat{v}}$, entonces $\hat{v}\in\bracket{\hat{v}}=\bracket{\hat{u}}$.
+                    \end{itemize}
+                \end{enumerate}
+            }<1>
+            \only{
+                \begin{enumerate}
+                    \setcounter{enumi}{2}
+                    \item\begin{itemize}
+                        \item[$\implies)$] Si $\bracket{\hat{u}}\cap\bracket{\hat{v}}=\void$ y además por (\ref{item : clase_no_vacia}) $\bracket{u},\bracket{\hat{v}}\neq\void$, eso implica que $\bracket{\hat{u}}\neq\bracket{\hat{v}}$.
+                        \item[$\impliedby)$] Probemos por contradicción. Supongamos que $\bracket{\hat{u}}\neq\bracket{\hat{v}}$ pero $\bracket{\hat{u}}\cap\bracket{\hat{v}}\neq\void$. Eso implica que existe al menos un $\hat{w}\in\bracket{\hat{u}}\cap\bracket{\hat{v}}$, es decir que $\hat{w}\sim\hat{u}$ y $\hat{w}\sim\hat{v}$. Por transitividad tenemos que $\hat{u}\sim\hat{v}$, pero eso implica que $\hat{u}\in\bracket{\hat{v}}$ y entonces por (\ref{item : clases_iguales}) se tiene que $\bracket{\hat{u}}=\bracket{\hat{v}}$, lo cual es una contradicción. Por lo tanto, $\bracket{\hat{u}}\cap\bracket{\hat{v}}=\void$.
+                    \end{itemize}
+                \end{enumerate}
+            }<2>
+        \end{proof}
+    \end{frame}
+    \begin{frame}{Conjunto de representantes}
+        \begin{mdefinition}[Conjunto de representantes]
+            Sea $\hat{u}\in\bracket{\hat{v}}$ con $\hat{u},\hat{v}$ vectores posicionados. $\hat{u}$ se denomina \emph{representante} de la clase $\bracket{\hat{v}}$ si y solo si el origen de $\hat{u}$ es $\hat{0}$, es decir, $\hat{u}$ es un vector que parte del origen.\par 
+            Definimos a $S$ como el conjunto de todos los representantes de cada clase de vectores.
+            \[S\coloneqq\set{\hat{u}:\hat{u}\text{ es representante de alguna clase }\bracket{\hat{v}}}\]
+        \end{mdefinition}
+        \begin{mtheorem}
+            Toda clase de vectores tiene un vector representante.
+        \end{mtheorem}
+    \end{frame}
+    \begin{frame}{Demostración}
+        \begin{proof}
+            Sea $\bracket{\hat{v}}$ una clase de vectores y $\hat{v}$ un vector cualquiera de la clase que va de un vector $\hat{x}$ a un vector $\hat{y}$. Resulta que el vector $\hat{y} -\hat{x}$ tiene como origen el vector $\hat{0}$, y es claro que $\hat{y} -\hat{x}\in\bracket{\hat{v}}$. Por lo tanto, $\hat{y} -\hat{x}$ es representante de $\bracket{\hat{v}}$.
+        \end{proof}
+    \end{frame}
+    \begin{frame}{Unicidad del vector representante}
+        \begin{mtheorem}[Unicidad del vector representante]
+            El vector representante de una clase de vectores es único.
+        \end{mtheorem}
+        \begin{proof}
+            Sean $\hat{u}, \hat{v}$ vectores representantes de la misma clase, luego $\hat{u}\sim\hat{v}$, por lo tanto si $\hat{u}$ va de $\hat{w}$ a $\hat{x}$ y $\hat{v}$ va de $\hat{y}$ a $\hat{z}$, entonces:
+            \[\hat{x} -\hat{w} =\hat{z} -\hat{y}\]
+            pero dado que $\hat{u}, \hat{v}$ son representantes, entonces $\hat{w} =\hat{y} =\hat{0}$. Por lo tanto, $\hat{x} =\hat{z}$ y entonces necesariamente $\hat{u} =\hat{v}$. En conclusión, el vector representante es único.
+        \end{proof}
+    \end{frame}
+    \begin{frame}{Conjunto cociente de vectores}
+        \begin{mdefinition}[Conjunto cociente]
+            Sea $S$ el conjunto de representantes de las clases de vectores. Definimos al siguiente conjunto como el \emph{conjunto cociente} de vectores de $\rmath[2]$:
+            \[\rmath[2]/\sim\coloneqq\set{\bracket{\hat{u}}:\hat{u}\in S}\]
+        \end{mdefinition}
+    \end{frame}
+    \begin{frame}{Operaciones en el conjunto cociente}
+        \begin{mdefinition}[Operaciones en el conjunto cociente]
+            Sean $\bracket{\hat{u}},\bracket{\hat{v}}\in\rmath[2]/\sim$ clases de vectores. Definimos lo siguiente:
+            \begin{itemize}
+                \item Suma de clases
+                \[\bracket{\hat{u}} +\bracket{\hat{v}}\coloneqq\bracket{\hat{u} +\hat{v}}\]
+                \item Producto escalar de una clase
+                \[\alpha\bracket{\hat{u}}\coloneqq\bracket{\alpha\hat{u}}\]
+            \end{itemize}
+        \end{mdefinition}
+    \end{frame}
+    \begin{frame}{}
+        Falta probar que las operaciones descritas están \emph{bien definidas}, es decir, que la operación no dependa de los representantes. Debemos demostrar que si $\hat{u}\sim\hat{u}'$ y $\hat{v}\sim\hat{v}'$, entonces $\bracket{\hat{u} +\hat{v}} =\bracket{\hat{u}' +\hat{v}'}$ y $\bracket{\alpha\hat{u}} =\bracket{\alpha\hat{u}'}$.
+    \end{frame}
+    \begin{frame}{Demostración}
+        \begin{proof}
+            \only{
+                Sean $\hat{u}\sim\hat{u}',\hat{v}\sim\hat{v}'$ vectores posicionados. Supongamos que $\hat{u}$ va de $\hat{w}$ a $\hat{x}$, $\hat{u}'$ va de $\hat{w}'$ a $\hat{x}'$, $\hat{v}$ va de $\hat{y}$ a $\hat{z}$ y $\hat{v}'$ va de $\hat{y}'$ a $\hat{z}'$.\par 
+                Sabemos que si $\hat{u}\sim\hat{u}',\hat{v}\sim\hat{v}'$, entonces:
+                \begin{align*}
+                    \hat{x} -\hat{w} &=\hat{x}' -\hat{w}'\\
+                    \hat{z} -\hat{y} &=\hat{z}' -\hat{y}'
+                \end{align*}
+                 Luego:
+                 \[\pa{\hat{x} +\hat{z}} -\pa{\hat{w} +\hat{y}} =\pa{\hat{x}' +\hat{z}'} -\pa{\hat{w}' +\hat{y}'}\]
+                 es decir, que $\hat{u} +\hat{v}\sim\hat{u}' +\hat{v}'$. Por lo tanto, $\bracket{\hat{u} +\hat{v}} =\bracket{\hat{u}' +\hat{v}'}$.
+            }<1>
+            \only{
+                Por otra parte, tenemos que:
+                \[\alpha\hat{x} -\alpha\hat{w} =\alpha\hat{x}' -\alpha\hat{w}'\]
+                es decir, que $\alpha\hat{u}\sim\alpha\hat{u}'$. Por lo tanto, $\bracket{\alpha\hat{u}} =\bracket{\alpha\hat{u}'}$.\par 
+                En conclusión, ambas operaciones están bien definidas.
+            }<2>
+        \end{proof}
+    \end{frame}
+    \section{Isomorfismo entre vectores}
+    \begin{frame}{Isomorfismo entre $\rmath[2]$ y $\rmath[2]/\sim$}
+        \begin{mdefinition}[Transformación lineal]
+            Sea $T: V\to W$ una función sobre dos conjuntos $V, W$ tales que tienen operaciones suma y producto escalar en $\rmath$. $T$ se denomina \emph{transformación lineal} o simplemente \emph{lineal} si cumple que:
+            \begin{enumerate}
+                \item $T\pa{\hat{v} +\hat{w}} = T\pa{\hat{v}} + T\pa{\hat{w}}$
+                \item $T\pa{\alpha\hat{v}} = \alpha T\pa{\hat{v}}$
+            \end{enumerate}
+            donde $\hat{v},\hat{w}\in V$ y $\alpha\in\rmath$.
+        \end{mdefinition}
+    \end{frame}
+    \begin{frame}{Isomorfismo}
+        \begin{mdefinition}[Isomorfismo]
+            Sea $T: V\to W$ una transformación lineal sobre $V, W$. $T$ se dice \emph{isomorfismo} si y solo si tiene inversa.\par 
+            Si $T$ es isomorfismo, se dice que $V$ y $W$ son \emph{isomorfos} y lo denotamos como $V\cong W$.
+        \end{mdefinition}
+    \end{frame}
+    \begin{frame}{}
+        \begin{mtheorem}
+            $\rmath[2]$ y $\rmath[2]/\sim$ son isomorfos y además la transformación lineal $T:\rmath[2]\to\rmath[2]/\sim$ definida por:
+            \[T(\hat{v}) =\bracket{\hat{v}}\]
+            es un isomorfismo entre $\rmath[2]$ y $\rmath[2]/\sim$.
+        \end{mtheorem}
+    \end{frame}
+\end{document}

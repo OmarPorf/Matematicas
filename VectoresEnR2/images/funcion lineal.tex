@@ -1,0 +1,21 @@
+
+\begin{tikzpicture}[line cap=round,line join=round,>=stealth,x=1cm,y=1cm, scale = 0.6]
+\begin{axis}[
+x=1cm,y=1cm,
+axis lines=middle,
+ymajorgrids=true,
+xmajorgrids=true,
+%xmin=-2,
+%xmax=4,
+%ymin=-1,
+%ymax=5]
+\clip(-2,-1) rectangle (4,5);
+\draw[line width=2pt,color=blue,smooth,samples=100,domain=-2:4] plot(\x,{2*(\x)+2});
+\draw [line width=2pt,dash pattern=on 1pt off 1pt,color=orange] (0,2)-- (1,2);
+\draw [line width=2pt,dash pattern=on 1pt off 1pt,color=orange] (1,2)-- (1,4);
+\draw[color=blue] (-1,-1.5) node {f(x)=mx+b};
+\draw [fill=purple] (0,2) circle (2pt);
+\draw[color=purple] (-1,2) node {$b$};
+\draw[color=orange] (2,3) node {$m$};
+\end{axis}
+\end{tikzpicture}

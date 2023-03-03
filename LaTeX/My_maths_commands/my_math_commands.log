@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.12) (preloaded format=pdflatex 2023.1.27)  28 JAN 2023 14:30
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.12) (preloaded format=pdflatex 2023.1.27)  2 MAR 2023 18:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -476,22 +476,22 @@ LaTeX Info: Redefining \% on input line 9.
 )
 \openout1 = `my_math_commands.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 284.
-LaTeX Font Info:    ... okay on input line 284.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 284.
-LaTeX Font Info:    ... okay on input line 284.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 284.
-LaTeX Font Info:    ... okay on input line 284.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 284.
-LaTeX Font Info:    ... okay on input line 284.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 284.
-LaTeX Font Info:    ... okay on input line 284.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 284.
-LaTeX Font Info:    ... okay on input line 284.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 284.
-LaTeX Font Info:    ... okay on input line 284.
-LaTeX Info: Redefining \. on input line 284.
-LaTeX Info: Redefining \% on input line 284.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 299.
+LaTeX Font Info:    ... okay on input line 299.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 299.
+LaTeX Font Info:    ... okay on input line 299.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 299.
+LaTeX Font Info:    ... okay on input line 299.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 299.
+LaTeX Font Info:    ... okay on input line 299.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 299.
+LaTeX Font Info:    ... okay on input line 299.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 299.
+LaTeX Font Info:    ... okay on input line 299.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 299.
+LaTeX Font Info:    ... okay on input line 299.
+LaTeX Info: Redefining \. on input line 299.
+LaTeX Info: Redefining \% on input line 299.
 
 (C:\Users\JASIEL\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.m
 kii
@@ -560,30 +560,30 @@ Package graphics Info: Driver file: pdftex.def on input line 107.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 286
+LaTeX Font Info:    Trying to load font information for U+msa on input line 301
 .
 (C:\Users\JASIEL\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 286
+LaTeX Font Info:    Trying to load font information for U+msb on input line 301
 .
 
 (C:\Users\JASIEL\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Trying to load font information for OMS+cmtt on input line 
-296.
-LaTeX Font Info:    No file OMScmtt.fd. on input line 296.
+311.
+LaTeX Font Info:    No file OMScmtt.fd. on input line 311.
 
 
 LaTeX Font Warning: Font shape `OMS/cmtt/m/n' undefined
 (Font)              using `OMS/cmsy/m/n' instead
-(Font)              for symbol `textbackslash' on input line 296.
+(Font)              for symbol `textbackslash' on input line 311.
 
 [1
 
 {C:/Users/JASIEL/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
-LaTeX Font Info:    Trying to load font information for U+euf on input line 391
+LaTeX Font Info:    Trying to load font information for U+euf on input line 406
 .
 
 (C:\Users\JASIEL\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\ueuf.fd
@@ -598,10 +598,10 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 10132 strings out of 476404
- 207763 string characters out of 2789052
- 1893324 words of memory out of 3000000
- 30304 multiletter control sequences out of 15000+600000
+ 10145 strings out of 476404
+ 207811 string characters out of 2789052
+ 1895324 words of memory out of 3000000
+ 30317 multiletter control sequences out of 15000+600000
  522269 words of font info for 71 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,11n,90p,525b,365s stack positions out of 10000i,1000n,20000p,200000b,80000s
@@ -626,7 +626,7 @@ AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/euler/eufm10.pfb><C:/
 Users/JASIEL/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/
 msam10.pfb><C:/Users/JASIEL/AppData/Local/Programs/MiKTeX/fonts/type1/public/am
 sfonts/symbols/msbm10.pfb>
-Output written on my_math_commands.pdf (3 pages, 213509 bytes).
+Output written on my_math_commands.pdf (3 pages, 214267 bytes).
 PDF statistics:
  102 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

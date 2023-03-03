@@ -188,6 +188,12 @@
 \newcommand{\mpow}[2][0]{
 	\ifthenelse{ \equal{#1}{0} }{\mathfrak{P}\left( #2 \right)}{\mathfrak{P}{#2}}
 }
+\newcommand{\mnu}[2][0]{
+	\ifthenelse{ \equal{#1}{0} }{\nu\left( #2 \right)}{\nu{#2}}
+}
+\newcommand{\mrho}[2][0]{
+	\ifthenelse{ \equal{#1}{0} }{\rho\left( #2 \right)}{\rho{#2}}
+}
 \newcommand{\mnuc}[2][0]{
 	\ifthenelse{ \equal{#1}{0} }{\operatorname{N}\left( #2 \right)}{\operatorname{N}{#2}}
 }
@@ -243,6 +249,14 @@
 \newcommandx{\mfr}[3][1 = 0, 3 = { }, usedefault]{
 	\ifthenelse{ \equal{#1}{0} }{\fr_{#3}\left(#2\right)}{\fr_{#3}{#2}}
 }
+\DeclareMathOperator*{\cl}{cl}
+\newcommandx{\mcl}[3][1 = 0, 3 = { }, usedefault]{
+	\ifthenelse{ \equal{#1}{0} }{\cl_{#3}\left( #2 \right)}{\cl_{#3}{#2}}
+}
+\DeclareMathOperator*{\der}{der}
+\newcommandx{\mder}[3][1 = 0, 3 = { }, usedefault]{
+	\ifthenelse{ \equal{#1}{0} }{\der_{#3}\left( #2 \right)}{\der_{#3}{#2}}
+}
 \newcommand{\mtrans}[2][0]{
 	\ifthenelse{ \equal{#1}{0} }{{#2}^{\mathsf{T}}}{\left( #2 \right)^{\mathsf{T}}}
 }
@@ -266,6 +280,7 @@
 		\int_{#4}^{#5}\left( #2 \right)d{#3}
 	}
 }
+\newcommand{\mpol}[2]{\mathcal{P}_{#2}\left( #1 \right)}
 \newcommand{\mmatrix}[2]{\mathcal{M}_{#2}\left( #1 \right)}
 \newcommand{\mlin}[1]{\mathcal{L}\left( #1 \right)}
 \newcommand{\mfunc}[1]{\mathcal{F}\left( #1 \right)}
@@ -389,6 +404,8 @@ donde el \emph{delimitador} indica si el argumento de la función estará delimi
 \begin{center}
 	\begin{tabular}{ll|ll}
 		$ \mpow{A} $ & \texttt{\textbackslash mpow\{A\}} & $ \mpow[1]{A} $ & \texttt{\textbackslash mpow[1]\{A\}}\\
+		$ \mnu{A} $ & \texttt{\textbackslash mnu\{A\}} & $ \mnu[1]{A} $ & \texttt{\textbackslash mnu[1]\{A\}}\\
+		$ \mrho{A} $ & \texttt{\textbackslash mrho\{A\}} & $ \mrho[1]{A} $ & \texttt{\textbackslash mrho[1]\{A\}}\\
 		$ \mnuc{A} $ & \texttt{\textbackslash mnuc\{A\}} & $ \mnuc[1]{A} $ & \texttt{\textbackslash mnuc[1]\{A\}}\\
 		$ \mgen{A} $ & \texttt{\textbackslash mgen\{A\}} & $ \mgen[1]{A} $ & \texttt{\textbackslash mgen[1]\{A\}}\\
 		$ \mtr{A} $ & \texttt{\textbackslash mtr\{A\}} & $ \mtr[1]{A} $ & \texttt{\textbackslash mtr[1]\{A\}}\\
@@ -411,6 +428,10 @@ donde el \emph{delimitador} indica si el argumento de la función estará delimi
 		$ \ds\mexte{f(x)}[x\in A] $ & \texttt{\textbackslash mexte\{f(x)\}[x\textbackslash in A]} & $ \ds\mexte[1]{f(x)}[x\in A] $ & \texttt{\textbackslash mexte[1]\{f(x)\}[x\textbackslash in A]}\\
 		$ \mfr{A} $ & \texttt{\textbackslash mfr\{A\}} & $ \mfr[1]{A} $ & \texttt{\textbackslash mfr[1]\{A\}}\\
 		$ \ds\mfr{f(x)}[x\in A] $ & \texttt{\textbackslash mfr\{f(x)\}[x\textbackslash in A]} & $ \ds\mfr[1]{f(x)}[x\in A] $ & \texttt{\textbackslash mfr[1]\{f(x)\}[x\textbackslash in A]}\\
+		$ \mcl{A} $ & \texttt{\textbackslash mcl\{A\}} & $ \mcl[1]{A} $ & \texttt{\textbackslash mcl[1]\{A\}}\\
+		$ \ds\mcl{f(x)}[x\in A] $ & \texttt{\textbackslash mcl\{f(x)\}[x\textbackslash in A]} & $ \ds\mcl[1]{f(x)}[x\in A] $ & \texttt{\textbackslash mcl[1]\{f(x)\}[x\textbackslash in A]}\\
+		$ \mder{A} $ & \texttt{\textbackslash mder\{A\}} & $ \mder[1]{A} $ & \texttt{\textbackslash mder[1]\{A\}}\\
+		$ \ds\mder{f(x)}[x\in A] $ & \texttt{\textbackslash mder\{f(x)\}[x\textbackslash in A]} & $ \ds\mder[1]{f(x)}[x\in A] $ & \texttt{\textbackslash mder[1]\{f(x)\}[x\textbackslash in A]}\\
 		$ \mtrans{A} $ & \texttt{\textbackslash mtrans\{A\}} & $ \mtrans[1]{A} $ & \texttt{\textbackslash mtrans[1]\{A\}}\\
 		$ \mcomp{A} $ & \texttt{\textbackslash mcomp\{A\}} & $ \mcomp[1]{A} $ & \texttt{\textbackslash mcomp[1]\{A\}}\\
 		$ \minv{A} $ & \texttt{\textbackslash minv\{A\}} & $ \minv[1]{A} $ & \texttt{\textbackslash minv[1]\{A\}}\\
@@ -419,9 +440,9 @@ donde el \emph{delimitador} indica si el argumento de la función estará delimi
 		$ \ds\mint{f(u)}{u} $ & \texttt{\textbackslash mint\{f(u)\}\{u\}} & $ \ds\mint[1]{f(u)}{u} $ & \texttt{\textbackslash mint[1]\{f(u)\}\{u\}}\\
 		$ \ds\mint{f(u)}{u}[a][b] $ & \texttt{\textbackslash mint\{f(u)\}\{u\}[a][b]} & $ \ds\mint[1]{f(u)}{u}[a][b] $ & \texttt{\textbackslash mint[1]\{f(u)\}\{u\}[a][b]}\\
 		$ \mproj{u}{v} $ & \texttt{\textbackslash mproj\{u\}\{v\}} & $ \mmatrix{F}{nm} $ & \texttt{\textbackslash mmatrix\{F\}\{nm\}}\\
-		$ \mlin{V} $ & \texttt{\textbackslash mlin\{V\}} & $ \mfunc{W} $ & \texttt{\textbackslash mfunc\{W\}}\\
-		$ \msinf{F} $ & \texttt{\textbackslash msinf\{F\}} & $ \mssup{F} $ & \texttt{\textbackslash mssup\{F\}}\\
-		$ \mdis{x, y} $ & \texttt{\textbackslash mdis\{x, y\}} & &
+		$ \mlin{V} $ & \texttt{\textbackslash mlin\{V\}} & $ \mpol{F}{n} $ & \texttt{\textbackslash mpol\{F\}\{n\}}\\
+		$ \mfunc{W} $ & \texttt{\textbackslash mfunc\{W\}} & $ \msinf{F} $ & \texttt{\textbackslash msinf\{F\}}\\
+		$ \mssup{F} $ & \texttt{\textbackslash mssup\{F\}} & $ \mdis{x, y} $ & \texttt{\textbackslash mdis\{x, y\}} 
 	\end{tabular}
 \end{center}
 \section{Otros s\'{\i}mbolos}

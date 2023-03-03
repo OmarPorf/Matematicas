@@ -164,6 +164,12 @@
 \newcommand{\mpow}[2][0]{
 	\ifthenelse{ \equal{#1}{0} }{\mathfrak{P}\left( #2 \right)}{\mathfrak{P}{#2}}
 }
+\newcommand{\mnu}[2][0]{
+	\ifthenelse{ \equal{#1}{0} }{\nu\left( #2 \right)}{\nu{#2}}
+}
+\newcommand{\mrho}[2][0]{
+	\ifthenelse{ \equal{#1}{0} }{\rho\left( #2 \right)}{\rho{#2}}
+}
 \newcommand{\mnuc}[2][0]{
 	\ifthenelse{ \equal{#1}{0} }{\operatorname{N}\left( #2 \right)}{\operatorname{N}{#2}}
 }
@@ -219,6 +225,14 @@
 \newcommandx{\mfr}[3][1 = 0, 3 = { }, usedefault]{
 	\ifthenelse{ \equal{#1}{0} }{\fr_{#3}\left(#2\right)}{\fr_{#3}{#2}}
 }
+\DeclareMathOperator*{\cl}{cl}
+\newcommandx{\mcl}[3][1 = 0, 3 = { }, usedefault]{
+	\ifthenelse{ \equal{#1}{0} }{\cl_{#3}\left( #2 \right)}{\cl_{#3}{#2}}
+}
+\DeclareMathOperator*{\der}{der}
+\newcommandx{\mder}[3][1 = 0, 3 = { }, usedefault]{
+	\ifthenelse{ \equal{#1}{0} }{\der_{#3}\left( #2 \right)}{\der_{#3}{#2}}
+}
 \newcommand{\mtrans}[2][0]{
 	\ifthenelse{ \equal{#1}{0} }{{#2}^{\mathsf{T}}}{\left( #2 \right)^{\mathsf{T}}}
 }
@@ -242,6 +256,7 @@
 		\int_{#4}^{#5}\left( #2 \right)d{#3}
 	}
 }
+\newcommand{\mpol}[2]{\mathcal{P}_{#2}\left( #1 \right)}
 \newcommand{\mmatrix}[2]{\mathcal{M}_{#2}\left( #1 \right)}
 \newcommand{\mlin}[1]{\mathcal{L}\left( #1 \right)}
 \newcommand{\mfunc}[1]{\mathcal{F}\left( #1 \right)}

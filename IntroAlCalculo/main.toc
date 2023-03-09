@@ -1,0 +1,77 @@
+\babel@toc {spanish}{}\relax 
+\contentsline {part}{\@mypartnumtocformat {I}{Preliminares}}{7}{part.1}%
+\contentsline {chapter}{\numberline {1}Lógica y conjuntos}{9}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Lógica proposicional}{9}{section.1.1}%
+\contentsline {subsection}{\numberline {1.1.1}Conectores lógicos}{10}{subsection.1.1.1}%
+\contentsline {section}{\numberline {1.2}Argumentos lógicos}{10}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Conjuntos}{10}{section.1.3}%
+\contentsline {chapter}{\numberline {2}Demostraciones}{11}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Predicados}{11}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Métodos de demostración}{11}{section.2.2}%
+\contentsline {part}{\@mypartnumtocformat {II}{El conjunto de los reales}}{13}{part.2}%
+\contentsline {chapter}{\numberline {3}Los números reales}{15}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Axiomas de campo}{15}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Axiomas de orden}{15}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Axioma de completitud}{15}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Algunos teoremas sobre los números reales}{15}{section.3.4}%
+\contentsline {chapter}{\numberline {4}Funciones reales en una variable}{17}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Funciones reales en una variable}{17}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Inyectividad, suprayectividad y biyectividad}{17}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Funciones inversas}{17}{section.4.3}%
+\contentsline {part}{\@mypartnumtocformat {III}{Sucesiones y series}}{19}{part.3}%
+\contentsline {chapter}{\numberline {5}Sucesiones}{21}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Convergencia de sucesiones}{21}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Algunos teoremas de convergencia}{21}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Subsucesiones}{21}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Sucesiones de Cauchy}{21}{section.5.4}%
+\contentsline {section}{\numberline {5.5}Sucesiones divergentes}{21}{section.5.5}%
+\contentsline {chapter}{\numberline {6}Series}{23}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Convergencia de series}{23}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Criterios de convergencia}{23}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Convergencia absoluta y condicional}{23}{section.6.3}%
+\contentsline {part}{\@mypartnumtocformat {IV}{Límites y continuidad}}{25}{part.4}%
+\contentsline {chapter}{\numberline {7}Límites}{27}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Límites de funciones}{27}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Propiedades de los límites}{27}{section.7.2}%
+\contentsline {section}{\numberline {7.3}Cálculo de límites}{27}{section.7.3}%
+\contentsline {section}{\numberline {7.4}Límites al infinito}{27}{section.7.4}%
+\contentsline {chapter}{\numberline {8}Continuidad}{29}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Continuidad de funciones}{29}{section.8.1}%
+\contentsline {section}{\numberline {8.2}Teoremas fuertes de continuidad}{29}{section.8.2}%
+\contentsline {section}{\numberline {8.3}Continuidad uniforme}{29}{section.8.3}%
+\contentsline {part}{\@mypartnumtocformat {V}{Cálculo diferencial}}{31}{part.5}%
+\contentsline {chapter}{\numberline {9}Diferenciabilidad}{33}{chapter.9}%
+\contentsline {section}{\numberline {9.1}Diferenciabilidad de funciones}{33}{section.9.1}%
+\contentsline {section}{\numberline {9.2}Cálculo de derivadas}{33}{section.9.2}%
+\contentsline {section}{\numberline {9.3}Derivadas de orden superior}{33}{section.9.3}%
+\contentsline {section}{\numberline {9.4}Algunos teoremas de diferenciabilidad}{33}{section.9.4}%
+\contentsline {chapter}{\numberline {10}Aplicaciones de la derivada}{35}{chapter.10}%
+\contentsline {section}{\numberline {10.1}Máximos, mínimos y concavidad de una función}{35}{section.10.1}%
+\contentsline {section}{\numberline {10.2}Bosquejo de funciones}{35}{section.10.2}%
+\contentsline {section}{\numberline {10.3}Razones de cambio}{35}{section.10.3}%
+\contentsline {section}{\numberline {10.4}Diferenciales}{35}{section.10.4}%
+\contentsline {section}{\numberline {10.5}Regla de L'H\^{o}pital}{35}{section.10.5}%
+\contentsline {part}{\@mypartnumtocformat {VI}{Cálculo integral}}{37}{part.6}%
+\contentsline {chapter}{\numberline {11}Integrabilidad}{39}{chapter.11}%
+\contentsline {section}{\numberline {11.1}Particiones de un intervalo}{39}{section.11.1}%
+\contentsline {section}{\numberline {11.2}Integrabilidad de funciones}{39}{section.11.2}%
+\contentsline {section}{\numberline {11.3}Propiedades de la integral}{39}{section.11.3}%
+\contentsline {section}{\numberline {11.4}Teorema fundamental del Cálculo}{39}{section.11.4}%
+\contentsline {section}{\numberline {11.5}Algunos teoremas de la integrabilidad}{39}{section.11.5}%
+\contentsline {section}{\numberline {11.6}La integral indefinida}{39}{section.11.6}%
+\contentsline {chapter}{\numberline {12}Funciones trascendentes}{41}{chapter.12}%
+\contentsline {section}{\numberline {12.1}La función logaritmo}{41}{section.12.1}%
+\contentsline {section}{\numberline {12.2}La función exponencial}{41}{section.12.2}%
+\contentsline {section}{\numberline {12.3}Funciones de potencias arbitrarias}{41}{section.12.3}%
+\contentsline {section}{\numberline {12.4}Las funciones trigonométricas inversas}{41}{section.12.4}%
+\contentsline {section}{\numberline {12.5}Las funciones hiperbólicas}{41}{section.12.5}%
+\contentsline {chapter}{\numberline {13}Métodos de integración}{43}{chapter.13}%
+\contentsline {section}{\numberline {13.1}Método de sustitución}{43}{section.13.1}%
+\contentsline {section}{\numberline {13.2}Integración por partes}{43}{section.13.2}%
+\contentsline {section}{\numberline {13.3}Sustitución trigonométrica}{43}{section.13.3}%
+\contentsline {section}{\numberline {13.4}Fracciones parciales}{43}{section.13.4}%
+\contentsline {chapter}{\numberline {14}Aplicaciones de la integral}{45}{chapter.14}%
+\contentsline {section}{\numberline {14.1}Cálculo de áreas y volúmenes}{45}{section.14.1}%
+\contentsline {section}{\numberline {14.2}Volúmen de sólidos de revolución}{45}{section.14.2}%
+\contentsline {section}{\numberline {14.3}Centroides de regiones}{45}{section.14.3}%
+\contentsfinish 

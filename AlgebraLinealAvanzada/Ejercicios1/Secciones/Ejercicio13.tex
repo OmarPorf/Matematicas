@@ -1,0 +1,149 @@
+\begin{exercise}
+	Encuentre una base ortogonal empleando Gram-Schmidt para $\rmath[3]$ que contenga al vector:
+	\[
+		\begin{bmatrix}
+			3\\
+			-1\\
+			5
+		\end{bmatrix}
+	\]
+\end{exercise}
+\begin{solution}
+	Notemos que:
+	\[  
+		\begin{vmatrix}
+			3 & 1 & 0\\
+			-1 & 0 & 1\\
+			5 & 0 & 0
+		\end{vmatrix}
+		= -
+		\begin{vmatrix}
+			3 & 1\\
+			5 & 0
+		\end{vmatrix}
+		= 5\neq 0
+	\]
+	entonces $\set{
+	v_{1} =\begin{bsmallmatrix}
+		3 \\ -1 \\ 5
+	\end{bsmallmatrix},
+	v_{2} =\begin{bsmallmatrix}
+		1 \\ 0 \\ 0
+	\end{bsmallmatrix},
+	v_{3} =\begin{bsmallmatrix}
+		0 \\ 1 \\ 0
+	\end{bsmallmatrix}
+	}$ es L.I. y entonces base de $\rmath[3]$. Ortogonalicemos:
+	\begin{align*}
+		u_{1} &= v_{1} =
+		\begin{bmatrix}
+			3\\ -1 \\ 5
+		\end{bmatrix}\\
+		u_{2} &= v_{2} - \dfrac{\inprod{v_{2}, u_{1}}}{\norm{u_{1}}^{2}}u_{1}
+		=
+		\begin{bmatrix}
+			1 \\ 0 \\ 0
+		\end{bmatrix}
+		-
+		\dfrac{
+		\begin{bmatrix}
+			1 \\ 0 \\ 0
+		\end{bmatrix}
+		\cdot
+		\begin{bmatrix}
+			3\\ -1 \\ 5
+		\end{bmatrix}
+		}{\norm{
+		\begin{bmatrix}
+			3\\ -1 \\ 5
+		\end{bmatrix}
+		}^{2}}
+		\begin{bmatrix}
+			3\\ -1 \\ 5
+		\end{bmatrix}
+		=
+		\begin{bmatrix}
+			1 \\ 0 \\ 0
+		\end{bmatrix}
+		-
+		\dfrac{3}{35}
+		\begin{bmatrix}
+			3\\ -1 \\ 5
+		\end{bmatrix}
+		=
+		\dfrac{1}{35}
+		\begin{bmatrix}
+			26 \\ 3 \\ -15
+		\end{bmatrix}\\
+		u_{3} &= v_{3} -\dfrac{\inprod{v_{3}, u_{1}}}{\norm{u_{1}}^{2}}u_{1} -\dfrac{\inprod{v_{3}, u_{2}}}{\norm{u_{2}}^{2}}u_{2}
+		=
+		\begin{bmatrix}
+			0 \\ 1 \\ 0
+		\end{bmatrix}
+		-
+		\dfrac{
+		\begin{bmatrix}
+			0 \\ 1 \\ 0
+		\end{bmatrix}
+		\cdot
+		\begin{bmatrix}
+			3\\ -1 \\ 5
+		\end{bmatrix}
+		}{\norm{
+		\begin{bmatrix}
+			3\\ -1 \\ 5
+		\end{bmatrix}
+		}^{2}}
+		\begin{bmatrix}
+			3\\ -1 \\ 5
+		\end{bmatrix}
+		-
+		\dfrac{
+		\begin{bmatrix}
+			0 \\ 1 \\ 0
+		\end{bmatrix}
+		\cdot
+		\begin{bmatrix}
+			26/35 \\ 3/35 \\ -3/7
+		\end{bmatrix}
+		}{\norm{
+		\begin{bmatrix}
+			26/35 \\ 3/35 \\ -3/7
+		\end{bmatrix}
+			}^{2}}
+		\begin{bmatrix}
+			26/35 \\ 3/35 \\ -3/7
+		\end{bmatrix}\\
+		&=
+		\begin{bmatrix}
+			0 \\ 1 \\ 0
+		\end{bmatrix}
+		+
+		\dfrac{1}{35}
+		\begin{bmatrix}
+			3\\ -1 \\ 5
+		\end{bmatrix}
+		-
+		\dfrac{3}{26}
+		\begin{bmatrix}
+			26/35 \\ 3/35 \\ -3/7
+		\end{bmatrix}
+		=\dfrac{1}{26}
+		\begin{bmatrix}
+			0 \\ 25 \\ 5
+		\end{bmatrix}
+	\end{align*}
+	Por lo tanto, $\set{
+	\begin{bsmallmatrix}
+		3\\ -1 \\ 5
+	\end{bsmallmatrix},
+	\frac{1}{35}
+	\begin{bsmallmatrix}
+		26 \\ 3 \\ -15
+	\end{bsmallmatrix},
+	\frac{1}{26}
+	\begin{bsmallmatrix}
+		0 \\ 25 \\ 5
+	\end{bsmallmatrix}
+	}$ es una base ortogonal de $\rmath[3]$.
+\end{solution}

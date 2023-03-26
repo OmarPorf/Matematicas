@@ -1,0 +1,138 @@
+\begin{exercise}
+	Sea $S =\set{v_{1} =\mtrans{\begin{bmatrix}
+			1 & 1 & 1
+	\end{bmatrix}}, v_{2} =\mtrans{\begin{bmatrix}
+	1 & 2 & -3
+	\end{bmatrix}}, v_{3} =\mtrans{\begin{bmatrix}
+	5 & -4 & -1
+	\end{bmatrix}}}$ un subconjunto de $\rmath[3]$.
+	\begin{enumerate}[a)]
+		\item Probar que $S$ es un conjunto ortogonal y que es una base de $\rmath[3]$.
+		\item Escribir $v =\mtrans{\begin{bmatrix}
+				1 & 5 & -7
+		\end{bmatrix}}$ como combinación de los vectores que pertenecen a $S$.
+	\end{enumerate}
+\end{exercise}
+\begin{solution}
+	\begin{enumerate}[a)]
+		\item Comprobemos que $S$ es ortogonal.
+		\begin{align*}
+			\begin{bmatrix}
+				1 \\ 1 \\ 1
+			\end{bmatrix}
+			\cdot
+			\begin{bmatrix}
+				1 \\ 2 \\ -3
+			\end{bmatrix}
+			&= 1 + 2 - 3 = 0\\
+			\begin{bmatrix}
+				1 \\ 1 \\ 1
+			\end{bmatrix}
+			\cdot
+			\begin{bmatrix}
+				5 \\ -4 \\ -1
+			\end{bmatrix}
+			&= 5 - 4 - 1 = 0\\
+			\begin{bmatrix}
+				1 \\ 2 \\ -3
+			\end{bmatrix}
+			\cdot
+			\begin{bmatrix}
+				5 \\ -4 \\ -1
+			\end{bmatrix}
+			&= 5 - 8 + 3 = 0
+		\end{align*}
+		Por lo tanto, $S$ es ortogonal, por consiguiente L.I. y entonces $S$ es base de $\rmath[3]$.
+		\item Sabemos que la descomposición ortogonal de $v$ en $S$ es la suma de sus proyecciones:
+		\begin{align*}
+			\mproj{v}{v_{1}} &=\dfrac{
+				\begin{bmatrix}
+					1 \\ 5 \\ -7
+				\end{bmatrix}
+				\cdot
+				\begin{bmatrix}
+					1 \\ 1 \\ 1
+				\end{bmatrix}
+			}{\norm{
+				\begin{bmatrix}
+					1 \\ 1 \\ 1
+				\end{bmatrix}
+			}^{2}}
+			\begin{bmatrix}
+				1 \\ 1 \\ 1
+			\end{bmatrix} 
+			=\dfrac{1 + 5 - 7}{1 + 1 + 1}
+			\begin{bmatrix}
+				1 \\ 1 \\ 1
+			\end{bmatrix}
+		 	= -\dfrac{1}{3}
+			\begin{bmatrix}
+				1 \\ 1 \\ 1
+			\end{bmatrix}\\
+			\mproj{v}{v_{2}} &=\dfrac{
+				\begin{bmatrix}
+					1 \\ 5 \\ -7
+				\end{bmatrix}
+				\cdot
+				\begin{bmatrix}
+					1 \\ 2 \\ -3
+				\end{bmatrix}
+			}{\norm{
+				\begin{bmatrix}
+					1 \\ 2 \\ -3
+				\end{bmatrix}
+				}^{2}}
+			\begin{bmatrix}
+				1 \\ 2 \\ -3
+			\end{bmatrix} 
+			=\dfrac{1 + 10 + 21}{1 + 4 + 9}
+			\begin{bmatrix}
+				1 \\ 2 \\ -3
+			\end{bmatrix} 
+			= \dfrac{16}{7}
+			\begin{bmatrix}
+				1 \\ 2 \\ -3
+			\end{bmatrix}\\
+			\mproj{v}{v_{3}} &=\dfrac{
+				\begin{bmatrix}
+					1 \\ 5 \\ -7
+				\end{bmatrix}
+				\cdot
+				\begin{bmatrix}
+					5 \\ -4 \\ -1
+				\end{bmatrix}
+			}{\norm{
+				\begin{bmatrix}
+					5 \\ -4 \\ -1
+				\end{bmatrix}
+			}^{2}}
+			\begin{bmatrix}
+				5 \\ -4 \\ -1
+			\end{bmatrix} 
+			=\dfrac{5 - 20 + 7}{25 + 16 + 1}
+			\begin{bmatrix}
+				5 \\ -4 \\ -1
+			\end{bmatrix} 
+			= -\dfrac{4}{21}
+			\begin{bmatrix}
+				5 \\ -4 \\ -1
+			\end{bmatrix}\\
+			\begin{bmatrix}
+				1 \\ 5 \\ -7
+			\end{bmatrix}
+			&=
+			-\dfrac{1}{3}
+			\begin{bmatrix}
+				1 \\ 1 \\ 1
+			\end{bmatrix}
+			+\dfrac{16}{7}
+			\begin{bmatrix}
+				1 \\ 2 \\ -3
+			\end{bmatrix}
+			-\dfrac{4}{21}
+			\begin{bmatrix}
+				5 \\ -4 \\ -1
+			\end{bmatrix}
+		\end{align*}
+	\end{enumerate}
+\end{solution}

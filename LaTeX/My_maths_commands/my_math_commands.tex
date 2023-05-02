@@ -269,6 +269,9 @@
 \newcommand{\mperp}[2][0]{
 	\ifthenelse{ \equal{#1}{0} }{{#2}^{\perp}}{\left( #2 \right)^{\perp}}
 }
+\newcommand{\madj}[2][0]{
+	\ifthenelse{ \equal{#1}{0} }{{#2}^{*}}{\left( #2 \right)^{*}}
+}
 \newcommand{\mproj}[2]{\operatorname{proj}_{#2}\left(#1\right)}
 \newcommandx{\meval}[3][2 = { }, 3 = { }]{
 	\left[ #1 \right]_{#2}^{#3}
@@ -287,6 +290,8 @@
 \newcommand{\mdis}[1]{\operatorname{d}\left( #1 \right)}
 \newcommand{\msinf}[1]{\operatorname{\underline{S}}\left( #1 \right)}
 \newcommand{\mssup}[1]{\operatorname{\overline{S}}\left( #1 \right)}
+\newcommand{\mmeas}[1]{\operatorname{m}\left( #1 \right)}
+\newcommand{\mclass}[1][]{\mathcal{C}^{#1}}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	% Otros símbolos
 \newcommand{\void}{\varnothing}
@@ -436,13 +441,15 @@ donde el \emph{delimitador} indica si el argumento de la función estará delimi
 		$ \mcomp{A} $ & \texttt{\textbackslash mcomp\{A\}} & $ \mcomp[1]{A} $ & \texttt{\textbackslash mcomp[1]\{A\}}\\
 		$ \minv{A} $ & \texttt{\textbackslash minv\{A\}} & $ \minv[1]{A} $ & \texttt{\textbackslash minv[1]\{A\}}\\
 		$ \mperp{A} $ & \texttt{\textbackslash mperp\{A\}} & $ \mperp[1]{A} $ & \texttt{\textbackslash mperp[1]\{A\}}\\
+		$ \madj{A} $ & \texttt{\textbackslash madj\{A\}} & $ \madj[1]{A} $ & \texttt{\textbackslash madj[1]\{A\}}\\
 		$ \meval{A}[\beta] $ & \texttt{\textbackslash meval\{A\}[\textbackslash beta]} & $ \meval{A}[\beta][\gamma] $ & \texttt{\textbackslash meval\{A\}[\textbackslash beta][\textbackslash gamma]}\\
 		$ \ds\mint{f(u)}{u} $ & \texttt{\textbackslash mint\{f(u)\}\{u\}} & $ \ds\mint[1]{f(u)}{u} $ & \texttt{\textbackslash mint[1]\{f(u)\}\{u\}}\\
 		$ \ds\mint{f(u)}{u}[a][b] $ & \texttt{\textbackslash mint\{f(u)\}\{u\}[a][b]} & $ \ds\mint[1]{f(u)}{u}[a][b] $ & \texttt{\textbackslash mint[1]\{f(u)\}\{u\}[a][b]}\\
 		$ \mproj{u}{v} $ & \texttt{\textbackslash mproj\{u\}\{v\}} & $ \mmatrix{F}{nm} $ & \texttt{\textbackslash mmatrix\{F\}\{nm\}}\\
 		$ \mlin{V} $ & \texttt{\textbackslash mlin\{V\}} & $ \mpol{F}{n} $ & \texttt{\textbackslash mpol\{F\}\{n\}}\\
 		$ \mfunc{W} $ & \texttt{\textbackslash mfunc\{W\}} & $ \msinf{F} $ & \texttt{\textbackslash msinf\{F\}}\\
-		$ \mssup{F} $ & \texttt{\textbackslash mssup\{F\}} & $ \mdis{x, y} $ & \texttt{\textbackslash mdis\{x, y\}} 
+		$ \mssup{F} $ & \texttt{\textbackslash mssup\{F\}} & $ \mdis{x, y} $ & \texttt{\textbackslash mdis\{x, y\}}\\
+		$\mmeas{A}$ & \textbackslash mmeas\{A\} & $\mclass[n]$ & \textbackslash mclass[n]
 	\end{tabular}
 \end{center}
 \section{Otros s\'{\i}mbolos}

@@ -1,7 +1,6 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newcommand{\ds}{\displaystyle}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	% Conjuntos numéricos
+% Conjuntos numéricos
 \newcommand{\cmath}[1][]{\mathbb{C}^{#1}}
 \newcommand{\rmath}[1][]{\mathbb{R}^{#1}}
 \newcommand{\qmath}[1][]{\mathbb{Q}^{#1}}
@@ -13,7 +12,7 @@
 \newcommand{\hmath}[1][]{\mathbb{H}^{#1}}
 \newcommand{\umath}[1][]{\mathbb{U}^{#1}}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	% Delimitadores
+% Delimitadores
 \newcommand{\pa}[1]{\left( #1 \right)}
 \newcommand{\bracket}[1]{\left[ #1 \right]}
 \newcommand{\set}[1]{\left\{ #1 \right\}}
@@ -29,7 +28,7 @@
 \newcommand{\Lopen}[1]{\left] #1 \right]}
 \newcommand{\Ropen}[1]{\left[ #1 \right[}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	% funciones estándar
+% funciones estándar
 \newcommandx{\minf}[3][1 = 0, 3 = { }, usedefault]{
 	\ifthenelse{ \equal{#1}{0}}{
 		\inf_{#3}\left( #2 \right)
@@ -160,7 +159,7 @@
 	\ifthenelse{ \equal{#1}{0} }{\min_{#3}\left( #2 \right)}{\min_{#3}{#2}}
 }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	% Otras funciones
+% Otras funciones
 \newcommand{\mpow}[2][0]{
 	\ifthenelse{ \equal{#1}{0} }{\mathfrak{P}\left( #2 \right)}{\mathfrak{P}{#2}}
 }
@@ -245,6 +244,9 @@
 \newcommand{\mperp}[2][0]{
 	\ifthenelse{ \equal{#1}{0} }{{#2}^{\perp}}{\left( #2 \right)^{\perp}}
 }
+\newcommand{\madj}[2][0]{
+	\ifthenelse{ \equal{#1}{0} }{{#2}^{*}}{\left( #2 \right)^{*}}
+}
 \newcommand{\mproj}[2]{\operatorname{proj}_{#2}\left(#1\right)}
 \newcommandx{\meval}[3][2 = { }, 3 = { }]{
 	\left[ #1 \right]_{#2}^{#3}
@@ -263,8 +265,10 @@
 \newcommand{\mdis}[1]{\operatorname{d}\left( #1 \right)}
 \newcommand{\msinf}[1]{\operatorname{\underline{S}}\left( #1 \right)}
 \newcommand{\mssup}[1]{\operatorname{\overline{S}}\left( #1 \right)}
+\newcommand{\mmeas}[1]{\operatorname{m}\left( #1 \right)}
+\newcommand{\mclass}[1][]{\mathcal{C}^{#1}}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	% Otros símbolos
+% Otros símbolos
 \newcommand{\void}{\varnothing}
 \newcommand{\true}{\top}
 \newcommand{\false}{\bot}
